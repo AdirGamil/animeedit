@@ -11,13 +11,13 @@ const __dirname = path.dirname(__filename)
 const app = express()
 app.use(express.json())
 
-// 1) יצירת httpServer + Socket.IO
+// יצירת httpServer + Socket.IO
 const httpServer = createServer(app)
 const io = new Server(httpServer, {
   cors: { origin: '*' },
 })
 
-// 2) מבני נתונים In-Memory
+// In-Memory data
 let locks = [] // [{ anizone_id, lockedBy, lockedAt }]
 let pendingEdits = [] // [{ editId, anizone_id, editedBy, newData }]
 
@@ -25,15 +25,14 @@ let pendingEdits = [] // [{ editId, anizone_id, editedBy, newData }]
 const ADMIN_USER = 'admin'
 const ADMIN_PASS = 'admin'
 
-// 3) נתיבים לקבצי JSON
-const dataPath = path.join(process.cwd(), 'public', 'data.json')
-const approvedPath = path.join(process.cwd(), 'public', 'approvedData.json')
+// נתיבים לקבצי JSON
+const dataPath = path.join(__dirname, 'public', 'data.json')
+const approvedPath = path.join(__dirname, 'public', 'approvedData.json')
 
 function loadAnimeData() {
   const raw = fs.readFileSync(dataPath, 'utf-8')
   return JSON.parse(raw)
 }
-
 function saveAnimeData(updatedArray) {
   fs.writeFileSync(dataPath, JSON.stringify(updatedArray, null, 2))
 }
@@ -42,14 +41,15 @@ function loadApprovedData() {
   const raw = fs.readFileSync(approvedPath, 'utf-8')
   return JSON.parse(raw)
 }
-
 function saveApprovedData(updatedArray) {
   fs.writeFileSync(approvedPath, JSON.stringify(updatedArray, null, 2))
 }
 
+// ---------------------------
 // 4) API Routes
+// ---------------------------
 
-// (א) מחזיר את רשימת האנימות
+// (א) מחזיר את רשימת האנימות (מוסיף locked/lockedBy)
 app.get('/api/anime', (req, res) => {
   const allAnime = loadAnimeData()
   const result = allAnime.map((anime) => {
@@ -58,7 +58,7 @@ app.get('/api/anime', (req, res) => {
       return {
         ...anime,
         locked: true,
-        lockedBy: foundLock.lockedBy, // מי נעל
+        lockedBy: foundLock.lockedBy,
       }
     } else {
       return {
@@ -73,26 +73,33 @@ app.get('/api/anime', (req, res) => {
 
 // (ב) נעילה
 app.post('/api/lock/:animeId', (req, res) => {
-  const { user } = req.body // שם המשתמש הנועל
+  const { user } = req.body // מזהה המשתמש
   const animeId = parseInt(req.params.animeId, 10)
 
-  // בדיקה אם יש כבר נעילה
+  // בדיקה אם האנימה כבר נעולה
   const existingLock = locks.find((l) => l.anizone_id === animeId)
   if (existingLock) {
-    // כבר נעול בידי אחר
     return res
       .status(409)
       .json({ error: 'Anime is already locked by someone else' })
   }
 
-  // אם לא נעול, נועל
+  // בדיקה אם למשתמש זה כבר יש נעילה על אנימה אחרת
+  const existingLockByUser = locks.find((l) => l.lockedBy === user)
+  if (existingLockByUser) {
+    return res
+      .status(409)
+      .json({ error: 'You already locked another anime. Please unlock first.' })
+  }
+
+  // נועלים
   locks.push({
     anizone_id: animeId,
     lockedBy: user,
     lockedAt: new Date().toISOString(),
   })
 
-  io.emit('locksUpdated', locks) // לשדר לכל המחוברים
+  io.emit('locksUpdated', locks)
   res.sendStatus(200)
 })
 
@@ -113,7 +120,7 @@ app.post('/api/pending-edits', (req, res) => {
   res.json({ editId })
 })
 
-// (ד) נקודת GET לכל העריכות בהמתנה (אדמין)
+// (ד) נקודת GET לכל העריכות בהמתנה (לאדמין)
 app.get('/api/pending-edits', (req, res) => {
   res.json(pendingEdits)
 })
@@ -131,7 +138,7 @@ app.post('/api/pending-edits/:editId/approve', (req, res) => {
   const pendingEdit = pendingEdits[editIndex]
   const animeId = pendingEdit.anizone_id
 
-  // טוען האנימות
+  // נטען את האנימות
   const oldAnimeList = loadAnimeData()
   const animeIndex = oldAnimeList.findIndex((a) => a.anizone_id === animeId)
   if (animeIndex === -1) {
@@ -145,25 +152,23 @@ app.post('/api/pending-edits/:editId/approve', (req, res) => {
     ...updatedByAdmin,
   }
 
-  // מסירים מ-data
+  // הסרה מ-data.json
   oldAnimeList.splice(animeIndex, 1)
   saveAnimeData(oldAnimeList)
 
-  // מוסיפים ל-approved
+  // הוספה ל-approved
   const approvedList = loadApprovedData()
   approvedList.push(finalData)
   saveApprovedData(approvedList)
 
-  // מסירים מה-pendingEdits
+  // הסרה מהפנדינג
   pendingEdits.splice(editIndex, 1)
 
-  // משחררים נעילה
+  // שחרור נעילה
   locks = locks.filter((l) => l.anizone_id !== animeId)
 
-  // משדרים
   io.emit('locksUpdated', locks)
   io.emit('pendingEditsUpdated', pendingEdits)
-
   res.json({ success: true, updatedAnime: finalData })
 })
 
@@ -176,8 +181,8 @@ app.post('/api/pending-edits/:editId/reject', (req, res) => {
   }
 
   const animeId = pendingEdits[editIndex].anizone_id
-
   pendingEdits.splice(editIndex, 1)
+
   // משחררים נעילה
   locks = locks.filter((l) => l.anizone_id !== animeId)
 
@@ -187,14 +192,26 @@ app.post('/api/pending-edits/:editId/reject', (req, res) => {
   res.json({ success: true })
 })
 
-// (ז) שחרור נעילה
-app.post('/api/unlock/:animeId', (req, res) => {
-  const animeId = parseInt(req.params.animeId, 10)
-  // מסנן החוצה את הנעילה לאנימה הזו
-  locks = locks.filter((l) => l.anizone_id !== animeId)
+// נקודת קצה להחזרת רשימת הנעילות
+app.get('/api/admin/locks', (req, res) => {
+  const { authorization } = req.headers
+  if (authorization !== 'Bearer dummy-admin-token') {
+    return res.status(403).json({ error: 'Not authorized' })
+  }
+  res.json(locks) // מחזיר את כל מערך הנעילות
+})
 
-  io.emit('locksUpdated', locks)
-  res.sendStatus(200)
+// נקודת קצה לביצוע Force Unlock
+app.post('/api/admin/unlock/:animeId', (req, res) => {
+  const { authorization } = req.headers
+  if (authorization !== 'Bearer dummy-admin-token') {
+    return res.status(403).json({ error: 'Not authorized' })
+  }
+
+  const animeId = parseInt(req.params.animeId, 10)
+  locks = locks.filter((l) => l.anizone_id !== animeId) // מסירים את הנעילה
+  io.emit('locksUpdated', locks) // מעדכנים את כל המשתמשים
+  res.json({ success: true })
 })
 
 // 5) לוגין אדמין
@@ -212,7 +229,7 @@ app.get('/api/admin/pending-edits', (req, res) => {
   if (authorization !== 'Bearer dummy-admin-token') {
     return res.status(403).json({ error: 'Not authorized' })
   }
-  return res.json(pendingEdits)
+  res.json(pendingEdits)
 })
 
 // סטטיסטיקות
@@ -230,7 +247,7 @@ app.get('/api/admin/stats', (req, res) => {
   const totalApproved = approvedJson.length
   const totalOverall = totalData
 
-  return res.json({
+  res.json({
     totalData,
     totalApproved,
     totalPending,
@@ -244,7 +261,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
 
-// 8) הפעלת השרת
+// הפעלת השרת
 const PORT = process.env.PORT || 3030
 httpServer.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)

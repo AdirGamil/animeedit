@@ -181,5 +181,187 @@
       "Space / חלל"
     ],
     "demographics": []
+  },
+  {
+    "anizone_id": 6,
+    "mal_id": 6,
+    "url": "https://myanimelist.net/anime/6/Trigun",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/opb2zy7eu7tdqpr3wtbj.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/cba0lmzi1jmmm7umebys.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=bJVyIXeUznY",
+      "embed_url": "https://www.youtube.com/embed/bJVyIXeUznY?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {}
+    },
+    "approved": true,
+    "title": "Trigun",
+    "title_english": "Trigun",
+    "title_hebrew": "טריגאןsss",
+    "title_japanese": "トライガン",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 26,
+    "status": "הסתיים",
+    "aired": {
+      "from": "1998-04-01T00:00:00+00:00",
+      "to": "1998-09-30T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 1,
+          "month": 4,
+          "year": 1998
+        },
+        "to": {
+          "day": 30,
+          "month": 9,
+          "year": 1998
+        }
+      },
+      "string": "01/04/1998 עד 30/09/1998"
+    },
+    "duration": "24 דקות",
+    "rating": "13+",
+    "score": 8.22,
+    "scored_by": 382146,
+    "rank": 364,
+    "popularity": 259,
+    "members": 786281,
+    "favorites": 16459,
+    "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs.\n\nWith his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "סיפור הסדרה מתרחש בכוכב אחר שמזכיר את המערב הפרוע. בכוכב הזה עומד איש אחד במרכז העניינים. האיש הזה, \"וואש\", שראשו שווה 60,000,000,000 דולר בעוון סיפורים בדויים שעוברים מפה לאוזן באיזור, עובר הרפתקאות מוזרות ומסעירות במהלך הסדרה.\nוואש הוא אקדחן מצוין ותמים שנאלץ להתחמק מעשרות ציידי ראשים שרוצים את הפרס העצום שמונח על ראשו. במהלך פגישה לא נעימה עם מספר ציידי ראשים, הוא מכיר לראשונה את מריל סטרייף ומילי טומפסון, שתי סוכנות ביטוח קשוחות היודעות להשתמש באקדח, שמחפשות אחר ואש הידוע. לאחר שדרכם של ואש וסוכנות הביטוח (כשאין להן אפילו שמץ של מושג שהאיש המוזר שהן הרגע פגשו הוא ואש שהן מחפשות) נפרדות, הם ממשיכים להיפגש שוב ושוב במצבים שונים ומשונים, ורק לאחר זמן רב של חיפושים הן מבינות שבעצם הוא האיש שאחריו הן מחפשות.\nבמהלך הסדרה, וואש עובר חוויות מוזרות, מצחיקות ומסעירות, שמהן הוא תמיד מצליח להתחמק בעזרת כישורי האקדח שלו, אבל בעיקר בזכות המון מזל.",
+    "background": "The Japanese release by Victor Entertainment has different openings relating to the specific episode it's played on. The initial Geneon Entertainment USA (then known as Pioneer) releases on VHS and DVD (singles, Signature Series, and box set) used only the first opening on each episode. This was due to the Japanese licensor providing them clean materials for only the first opening to put the English credits on. Geneon later fixed this mistake on their Limited Edition tin releases in 2005/2006, as well as on the Remix singles. Following Geneon USA's demise in late 2007, the show went out of print. When FUNimation Entertainment picked up the show in 2010 and released it, they repeated Geneon's mistake of using only the first opening on every episode. This mistake was later fixed in 2013 on the Anime Classics re-release.",
+    "background_hebrew": "",
+    "season": "אביב",
+    "year": 1998,
+    "broadcast": {
+      "day": "חמישי",
+      "time": "11:15",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי חמישי ב-11:15 (שעון ישראל)"
+    },
+    "producers": [
+      "Victor Entertainment"
+    ],
+    "licensors": [
+      "Funimation"
+    ],
+    "studios": [
+      "Madhouse"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Adventure / הרפתקאות",
+      "Sci-Fi / מדע בדיוני"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר"
+    ],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 7,
+    "mal_id": 7,
+    "url": "https://myanimelist.net/anime/7/Witch_Hunter_Robin",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/7_Witch_Hunter_Robin/phhnxz93wmvgyjjkmyot.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/7_Witch_Hunter_Robin/zecgs06qcoczbqlmjfbp.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=7UkaILjPk8M",
+      "embed_url": "https://www.youtube.com/embed/7UkaILjPk8M?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {}
+    },
+    "approved": true,
+    "title": "Witch Hunter Robin",
+    "title_english": "Witch Hunter Robin",
+    "title_hebrew": "ציידת המכשפות רוביןsssssss",
+    "title_japanese": "Witch Hunter ROBIN (ウイッチハンターロビン)",
+    "title_synonyms": [
+      "WHR"
+    ],
+    "type": "TV",
+    "source": "Original",
+    "episodes": 26,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2002-07-03T00:00:00+00:00",
+      "to": "2002-12-25T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 3,
+          "month": 7,
+          "year": 2002
+        },
+        "to": {
+          "day": 25,
+          "month": 12,
+          "year": 2002
+        }
+      },
+      "string": "03/07/2002 עד 25/12/2002"
+    },
+    "duration": "25 דקות",
+    "rating": "13+",
+    "score": 7.24,
+    "scored_by": 44782,
+    "rank": 3120,
+    "popularity": 1911,
+    "members": 120479,
+    "favorites": 656,
+    "synopsis": "Though hidden away from the general public, Witches—those with supernatural powers—have always existed in human societies. Neither numerous nor inherently evil, Witches are nonetheless capable of creating disorder by misusing their powers for criminal means. The task of solving supernatural crimes falls outside of the jurisdiction of normal authorities and is instead handled by the Solomon organization.\n\nHaving finished her training in Italy, Robin Sena transfers to Solomon's local Japanese branch, STNJ. Possessing powerful pyrokinetic abilities, she is herself a Witch, putting her at odds with STNJ's methods of dealing with rogue Witches. In particular, Robin opposes the use of an elixir called Orbo, which can weaken or even neutralize a Witch's powers. If Robin wants to find her place within the organization, she must find a way to navigate the internal politics of Solomon while also handling the threat of hostile Witches—but both seem to be dangerous for very different reasons.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "למרות שהן מוסתרות מעיני הציבור הרחב, מכשפות – אלה עם כוחות על-טבעיים – תמיד היו קיימות בחברות אנושיות. הן לא רבות ולא רשעיות מטבען, אבל מכשפות יכולות לגרום לכאוס כאשר הן מנצלות את כוחותיהן למטרות פשע. המשימה לפתור פשעים על-טבעיים חורגת מסמכות הרשויות הרגילות, והיא במקום זאת מטופלת על ידי הארגון \"סולומון\".\n\nלאחר שסיימה את הכשרתה באיטליה, רובין סנה מצטרפת לסניף המקומי של \"סולומון\" ביפן, ה-STNJ. עם יכולות פירוקינטיות עוצמתיות, היא בעצמה מכשפה, מה שמסבך אותה עם הדרכים של STNJ להתמודד עם מכשפות מורדות. במיוחד, רובין מתנגדת לשימוש באליקסיר בשם אורבו, שיכול להחליש או אפילו לנטרל את כוחותיה של מכשפה. אם רובין רוצה למצוא את מקומה בארגון, היא חייבת לנווט בפוליטיקה הפנימית של \"סולומון\" תוך התמודדות עם האיום של מכשפות עוינות – אבל נראה ששני הדברים האלה מסוכנים מסיבות שונות מאוד.\n\n(מקור: MAL Rewrite)",
+    "background": "",
+    "background_hebrew": "",
+    "season": "קיץ",
+    "year": 2002,
+    "broadcast": {
+      "day": "רביעי",
+      "time": "11:25",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי רביעי ב-11:25 (שעון ישראל)"
+    },
+    "producers": [
+      "Bandai Visual",
+      "Dentsu",
+      "Victor Entertainment"
+    ],
+    "licensors": [
+      "Funimation",
+      "Bandai Entertainment"
+    ],
+    "studios": [
+      "Sunrise"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Drama / דרמה",
+      "Mystery / מסתורין",
+      "Supernatural / על טבעי"
+    ],
+    "themes": [
+      "Detective / בלשות"
+    ],
+    "demographics": []
   }
 ]
