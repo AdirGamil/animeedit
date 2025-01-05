@@ -1,5 +1,5 @@
 /***********************************************
- * server.js - using Mongoose instead of JSON
+ * server.js - using Mongoose with flexible schema
  ***********************************************/
 import dotenv from 'dotenv'
 dotenv.config() // טוען את משתני הסביבה מקובץ .env
@@ -19,14 +19,14 @@ const __dirname = path.dirname(__filename)
 const MONGODB_URI = process.env.MONGODB_URI
 if (!MONGODB_URI) {
   console.error('ERROR: MONGODB_URI is not defined in environment variables!')
-  // אפשר לעצור את התהליך, למשל:
+  // אפשר לעצור את התהליך אם רוצים
   // process.exit(1)
 }
 
 // 3) התחברות ל-MongoDB, עם dbName = 'anime_db'
 mongoose
   .connect(MONGODB_URI, {
-    dbName: 'anime_db', // מוודא שאנחנו משתמשים בבסיס הנתונים anime_db
+    dbName: 'anime_db',
   })
   .then(() => console.log('Connected to MongoDB Atlas!'))
   .catch((err) => console.error('MongoDB connection error:', err.message))
@@ -41,33 +41,23 @@ const io = new Server(httpServer, {
 })
 
 // 5) In-memory arrays (Locks + PendingEdits)
-//    (אפשר להעביר למסד נתונים, אם תרצה)
+//    (אפשר להעביר למסד, אם תרצה)
 let locks = []
 let pendingEdits = []
 
 // 6) הגדרת סכמות (Schemas) ו-Models
 const { Schema, model } = mongoose
 
-// סכמה בסיסית (animeSchema) - משתתפת בכל 3 הקולקשנים
-const animeSchema = new Schema(
-  {
-    anizone_id: Number,
-    title: String,
-    title_english: String,
-    title_hebrew: String,
-    synopsis: String,
-    synopsis_hebrew: String,
-    background: String,
-    background_hebrew: String,
-    // ... שדות נוספים כרצונך
-  },
-  { versionKey: false }
-)
+/**
+ * הגדרת סכמה ל-Anime, עם { strict: false } כדי שנשמור את כל השדות
+ * (כולל images, trailer, aired וכו').
+ */
+const animeSchema = new Schema({}, { strict: false }) // strict: false => כל שדה נוסף נשמר
 
-// בכל קולקציה משתמשים באותה סכמה, אבל Models שונים
-const AnimeData = model('AnimeData', animeSchema, 'data') // קולקציית data
-const NeedCheckData = model('NeedCheckData', animeSchema, 'needCheck') // קולקציית needCheck
-const ApprovedData = model('ApprovedData', animeSchema, 'approved') // קולקציית approved
+// יוצרים שלושה Models לקולקציות השונות
+const AnimeData = model('AnimeData', animeSchema, 'data') // data
+const NeedCheckData = model('NeedCheckData', animeSchema, 'needCheck') // needCheck
+const ApprovedData = model('ApprovedData', animeSchema, 'approved') // approved
 
 // 7) Admin credentials
 const ADMIN_USER = 'ad123admin'
@@ -102,7 +92,7 @@ app.post('/api/lock/:animeId', (req, res) => {
   const { user } = req.body
   const animeId = parseInt(req.params.animeId, 10)
 
-  // כבר נעול?
+  // בדיקה אם האנימה כבר נעולה
   const existingLock = locks.find((l) => l.anizone_id === animeId)
   if (existingLock) {
     return res
@@ -110,7 +100,7 @@ app.post('/api/lock/:animeId', (req, res) => {
       .json({ error: 'Anime is already locked by someone else' })
   }
 
-  // למשתמש כבר יש נעילה?
+  // בדיקה אם למשתמש כבר יש נעילה
   const lockByUser = locks.find((l) => l.lockedBy === user)
   if (lockByUser) {
     return res
@@ -129,12 +119,17 @@ app.post('/api/lock/:animeId', (req, res) => {
 })
 
 /**
- * (ג) משתמש שומר עריכה -> מוציא מה-collection data => needCheck
+ * (ג) משתמש שומר עריכה => מוציא מה-collection "data" => קולקציית "needCheck"
  */
 app.post('/api/pending-edits', async (req, res) => {
   try {
     const { anizone_id, user, newData } = req.body
     const editId = Date.now().toString()
+
+    // חוסמים ניסיונות שליחת _id
+    if (newData._id) {
+      delete newData._id
+    }
 
     // מאתרים אנימה בקולקציית data
     const animeDoc = await AnimeData.findOne({ anizone_id })
@@ -144,10 +139,10 @@ app.post('/api/pending-edits', async (req, res) => {
         .json({ error: 'Anime not found in data collection' })
     }
 
-    // מוחקים מקולקציית data
+    // מוחקים את הרשומה מ-data
     await AnimeData.deleteOne({ anizone_id })
 
-    // ממזגים
+    // ממזגים את האובייקט מה-DB עם הנתונים החדשים
     const merged = {
       ...animeDoc.toObject(),
       ...newData,
@@ -156,13 +151,13 @@ app.post('/api/pending-edits', async (req, res) => {
     // מוסיפים ל-needCheck
     await NeedCheckData.create(merged)
 
-    // מעדכנים pendingEdits in-memory
+    // שומרים ב-pendingEdits in-memory
     pendingEdits.push({
       editId,
       anizone_id,
       editedBy: user,
       createdAt: new Date().toISOString(),
-      newData,
+      newData, // אם תרצה לשמור snapshot מורחב יותר - אפשר
     })
     io.emit('pendingEditsUpdated', pendingEdits)
 
@@ -188,7 +183,12 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
     const { editId } = req.params
     const updatedByAdmin = req.body.newData || {}
 
-    // איתור in-memory
+    // חוסמים ניסיונות שליחת _id (או שדות מערכת)
+    if (updatedByAdmin._id) {
+      delete updatedByAdmin._id
+    }
+
+    // 1) איתור in-memory
     const idx = pendingEdits.findIndex((p) => p.editId === editId)
     if (idx === -1) {
       return res.status(404).json({ error: 'Pending edit not found' })
@@ -197,7 +197,7 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
     const pend = pendingEdits[idx]
     const animeId = pend.anizone_id
 
-    // איתור האנימה ב-needCheck
+    // 2) איתור האנימה ב-needCheck
     const animeDoc = await NeedCheckData.findOne({ anizone_id: animeId })
     if (!animeDoc) {
       return res
@@ -205,10 +205,10 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
         .json({ error: 'Anime not found in needCheck collection' })
     }
 
-    // מחיקה מ-needCheck
+    // 3) מחיקה מ-needCheck
     await NeedCheckData.deleteOne({ anizone_id: animeId })
 
-    // ממזגים
+    // 4) ממזגים
     const finalData = {
       ...animeDoc.toObject(),
       ...pend.newData,
@@ -365,6 +365,7 @@ app.get('/api/admin/stats', async (req, res) => {
 /**
  * הגשת קבצי הלקוח (React build)
  */
+import { fileURLToPath } from 'url'
 app.use(express.static(path.join(__dirname, 'client/build')))
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
