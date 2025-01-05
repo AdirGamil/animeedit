@@ -60,9 +60,8 @@ const ADMIN_USER = 'ad123admin'
 const ADMIN_PASS = 'ad123admin!'
 
 /**
- * פונקציית עזר: לאחר שינוי (הסרה/הוספה) של רשומות ב-AnimeData,
- * אפשר *לשדר* לצורך עדכון live. עם pagination, אפשר להחליט לשדר
- * רק הודעה כללית ("animeDataChanged"), והלקוח יחליט אם לרענן Cache.
+ * פונקציית עזר: בכל שינוי (הסרה/הוספה) ב־AnimeData אנחנו משדרים "animeDataChanged"
+ * כך שהלקוחות ידעו "למשוך" שוב את העמוד הרצוי.
  */
 function broadcastAnimeDataChanged() {
   io.emit('animeDataChanged')
@@ -85,13 +84,12 @@ app.get('/api/anime', async (req, res) => {
     const page = parseInt(req.query.page, 10) || 1
     const limit = parseInt(req.query.limit, 10) || 30
 
-    // חישוב skip
     const skip = (page - 1) * limit
 
-    // מוצאים רק את האנימות בטווח המתאים
+    // מוצאים רק את האנימות בטווח הנוכחי
     const docs = await AnimeData.find().skip(skip).limit(limit).lean()
 
-    // סופרים כמה אנימות יש בקולקציה
+    // סופרים כמה אנימות סה"כ
     const totalCount = await AnimeData.countDocuments()
     const totalPages = Math.ceil(totalCount / limit)
 
@@ -182,7 +180,7 @@ app.post('/api/pending-edits', async (req, res) => {
       newData,
     })
 
-    // לאחר שהסרנו את האנימה מ-data, נרצה להודיע
+    // משדרים ש־AnimeData השתנתה
     broadcastAnimeDataChanged()
 
     io.emit('pendingEditsUpdated', pendingEdits)
@@ -249,7 +247,7 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
     locks = locks.filter((l) => l.anizone_id !== animeId)
     io.emit('locksUpdated', locks)
 
-    // האנימה נעלמה מ-data, כי עברה ל-approved
+    // האנימה נעלמה מ-data => animeDataChanged
     broadcastAnimeDataChanged()
 
     io.emit('pendingEditsUpdated', pendingEdits)
@@ -288,7 +286,7 @@ app.post('/api/pending-edits/:editId/reject', async (req, res) => {
     pendingEdits.splice(idx, 1)
 
     // שחרור נעילה
-    locks = locks.filter((l) => l.lockedBy !== pend.editedBy)
+    locks = locks.filter((l) => l.anizone_id !== animeId)
     io.emit('locksUpdated', locks)
 
     broadcastAnimeDataChanged()
@@ -406,6 +404,7 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => {
     console.log('A user disconnected:', socket.id, '-> userId:', userId)
+    // מסירים נעילות של המשתמש הזה
     locks = locks.filter((l) => l.lockedBy !== userId)
     io.emit('locksUpdated', locks)
   })
