@@ -29,6 +29,27 @@ const dataPath = path.join(__dirname, 'public', 'data.json')
 const needCheckPath = path.join(__dirname, 'public', 'needCheckData.json')
 const approvedPath = path.join(__dirname, 'public', 'approvedData.json')
 
+function loadFile(filePath) {
+  try {
+    if (!fs.existsSync(filePath)) {
+      console.error(`File not found: ${filePath}`)
+      return []
+    }
+    return JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+  } catch (err) {
+    console.error(`Error loading file at ${filePath}: ${err.message}`)
+    return []
+  }
+}
+
+function saveFile(filePath, data) {
+  try {
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
+  } catch (err) {
+    console.error(`Error saving file at ${filePath}: ${err.message}`)
+  }
+}
+
 function loadData() {
   return JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
 }
@@ -49,6 +70,10 @@ function loadApproved() {
 function saveApproved(arr) {
   fs.writeFileSync(approvedPath, JSON.stringify(arr, null, 2))
 }
+
+console.log(`Data path: ${dataPath}`)
+console.log(`NeedCheck path: ${needCheckPath}`)
+console.log(`Approved path: ${approvedPath}`)
 
 // --------------------------------
 // API
