@@ -300,17 +300,17 @@ io.on('connection', (socket) => {
   })
 })
 
-app.use(express.static(path.join(__dirname, '../client/build')))
+app.use(express.static(path.join(__dirname, 'client/build')))
 
-// נתיב ברירת מחדל לכל הבקשות שאינן API
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'))
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
+
 
 // --------------------------------
 // 8) הפעלת השרת
 // --------------------------------
-const PORT = 3001
+const PORT = 3000
 httpServer.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
 })
