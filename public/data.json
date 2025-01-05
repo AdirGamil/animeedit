@@ -1,362 +1,5 @@
 [
   {
-    "anizone_id": 8,
-    "mal_id": 8,
-    "url": "https://myanimelist.net/anime/8/Bouken_Ou_Beet",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/7/21569.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\8_Beet_the_Vandel_Buster\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/8_Beet_the_Vandel_Buster/qdfecz6g2byaab4jblpn.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/7/21569l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\8_Beet_the_Vandel_Buster\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/8_Beet_the_Vandel_Buster/hvuvzlanr5sm4defhkak.webp"
-      }
-    },
-    "trailer": {
-      "url": null,
-      "embed_url": null,
-      "images": {}
-    },
-    "approved": true,
-    "title": "Bouken Ou Beet",
-    "title_english": "Beet the Vandel Buster",
-    "title_hebrew": "ביט הכובש את הוונדל",
-    "title_japanese": "冒険王ビィト",
-    "title_synonyms": [
-      "Adventure King Beet"
-    ],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 52,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2004-09-30T00:00:00+00:00",
-      "to": "2005-09-29T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 30,
-          "month": 9,
-          "year": 2004
-        },
-        "to": {
-          "day": 29,
-          "month": 9,
-          "year": 2005
-        }
-      },
-      "string": "30/09/2004 עד 29/09/2005"
-    },
-    "duration": "23 דקות",
-    "rating": "לכולם",
-    "score": 6.93,
-    "scored_by": 6904,
-    "rank": 4626,
-    "popularity": 5509,
-    "members": 16054,
-    "favorites": 16,
-    "synopsis": "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a group of people who hunt these devils, and among them, the Zenon Squad is known to be the strongest busters on the continent. A young boy, Beet, dreams of joining the Zenon Squad. However, one day, as a result of Beet's fault, the Zenon squad was defeated by the devil, Beltose. The five dying busters sacrificed their life power into their five weapons, Saiga. After giving their weapons to Beet, they passed away. Years have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.",
-    "synopsis_hebrew": "זהו המאה האפלה והאנשים סובלים תחת שלטון השטן, ונדל, שיכול לתמרן מפלצות. הוונדל באסטרס הם קבוצה של אנשים שצדים את השדים הללו, וביניהם, קבוצת זנון ידועה כבוסטרים החזקים ביותר ביבשת. נער צעיר בשם ביט חולם להצטרף לקבוצת זנון. עם זאת, יום אחד, כתוצאה מאשמתו של ביט, קבוצת זנון הותקפה על ידי השטן, בלטוז. חמשת הבוסטרים הגוססים הקריבו את כוח חייהם אל תוך חמשת הנשקים שלהם, סייגה. אחרי שמסרו את נשקיהם לביט, הם מתו. שנים חלפו מאז, והבוסטר הצעיר, ביט, מתחיל את הרפתקאתו למלא את רצונה של קבוצת זנון לשים קץ למאה האפלה.",
-    "background": "",
-    "background_hebrew": null,
-    "season": "סתיו",
-    "year": 2004,
-    "broadcast": {
-      "day": "חמישי",
-      "time": "04:30",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי חמישי ב-04:30 (שעון ישראל)"
-    },
-    "producers": [
-      "TV Tokyo",
-      "Dentsu"
-    ],
-    "licensors": [
-      "Illumitoon Entertainment"
-    ],
-    "studios": [
-      "Toei Animation"
-    ],
-    "genres": [
-      "Action / אקשן",
-      "Adventure / הרפתקאות",
-      "Fantasy / פנטזיה"
-    ],
-    "themes": [],
-    "demographics": [
-      "Shounen / נער"
-    ]
-  },
-  {
-    "anizone_id": 17,
-    "mal_id": 17,
-    "url": "https://myanimelist.net/anime/17/Hungry_Heart__Wild_Striker",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/12/49655.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\17_Hungry_Heart__Wild_Striker\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/17_Hungry_Heart__Wild_Striker/zdyezvzapzctvwp12hvc.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/12/49655l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\17_Hungry_Heart__Wild_Striker\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/17_Hungry_Heart__Wild_Striker/rhp1v4dvozznkmtbgcgm.webp"
-      }
-    },
-    "trailer": {
-      "url": null,
-      "embed_url": null,
-      "images": {}
-    },
-    "approved": true,
-    "title": "Hungry Heart: Wild Striker",
-    "title_english": null,
-    "title_hebrew": "לב רעב: חלוץ הפרא",
-    "title_japanese": "ハングリーハート Wild Striker",
-    "title_synonyms": [],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 52,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2002-09-11T00:00:00+00:00",
-      "to": "2003-09-10T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 11,
-          "month": 9,
-          "year": 2002
-        },
-        "to": {
-          "day": 10,
-          "month": 9,
-          "year": 2003
-        }
-      },
-      "string": "11/09/2002 עד 10/09/2003"
-    },
-    "duration": "23 דקות",
-    "rating": "13+",
-    "score": 7.54,
-    "scored_by": 13797,
-    "rank": 1794,
-    "popularity": 4551,
-    "members": 25785,
-    "favorites": 244,
-    "synopsis": "As the younger brother of Japanese soccer star Seisuke Kanou, Kyousuke was always expected to grow as a soccer player at the same pace his brother did—an expectation that proved too difficult to meet. Having fallen behind, he now lives in the shadow of his brother's success.\n\nEntering his freshman year at Jouyou Akanegaoka High School, Kyousuke vows never to play soccer again. However, Miki Tsujiwaki, the captain of the girls' soccer team, and Mori Kazuto, the manager of the boys' team, recognize Kyousuke's potential and want to see his return to the game for their own reasons.\n\nWith an opportunity to play soccer again, Kyousuke must either remain steadfast in his decision to abandon the sport he once loved, or allow himself to reignite that flame to become the best striker in the world.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "בתור האח הצעיר של כוכב הכדורגל היפני סייסוקה קאנו, תמיד היו ציפיות שקיוסוקה יגדל ויהיה שחקן כדורגל בקצב כמו האח שלו – ציפייה שהתבררה כקשה מדי להשגה. לאחר שנשאר מאחור, כעת הוא חי בצל הצלחתו של אחיו.\n\nכאשר הוא נכנס לשנתו הראשונה בתיכון ג'ויו אקנגואה, קיוסוקה נשבע שלעולם לא ישחק בכדורגל שוב. עם זאת, מיקי טסוג'יוואקי, קפטן קבוצת הכדורגל לבנות, ומורי קזוטו, מנהל קבוצת הבנים, מזהים את פוטנציאל של קיוסוקה ורוצים לראות את החזרה שלו למשחק מסיבות משלהם.\n\nעם ההזדמנות לשחק בכדורגל שוב, קיוסוקה חייב להישאר נאמן בהחלטה שלו לנטוש את הספורט שאהב פעם, או לאפשר לעצמו להדליק מחדש את הלהבה כדי להפוך להיות החלוץ הטוב בעולם.\n\n(מקור: MAL Rewrite)",
-    "background": "Hungry Heart: Wild Striker was released on DVD by Pony Canyon in Japan from February 19, 2003 to March 17, 2004.",
-    "background_hebrew": null,
-    "season": "סתיו",
-    "year": 2002,
-    "broadcast": {
-      "day": null,
-      "time": null,
-      "timezone": "Asia/Jerusalem",
-      "string": null
-    },
-    "producers": [],
-    "licensors": [],
-    "studios": [
-      "Nippon Animation"
-    ],
-    "genres": [
-      "Comedy / קומדיה",
-      "Slice of Life / חלק מהחיים",
-      "Sports / ספורט"
-    ],
-    "themes": [
-      "Team Sports / ספורט קבוצתי"
-    ],
-    "demographics": [
-      "Shounen / נער"
-    ]
-  },
-  {
-    "anizone_id": 18,
-    "mal_id": 18,
-    "url": "https://myanimelist.net/anime/18/Initial_D_Fourth_Stage",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/zq0zypemsd8hcyzoxmrf.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/rxgluvooixdp9kq7bv7v.webp"
-      }
-    },
-    "trailer": {
-      "url": null,
-      "embed_url": null,
-      "images": {}
-    },
-    "approved": true,
-    "title": "Initial D Fourth Stage",
-    "title_english": null,
-    "title_hebrew": "ד' (די) שלב רביעי",
-    "title_japanese": "頭文字〈イニシャル〉D FOURTH STAGE",
-    "title_synonyms": [
-      "Initial D 4th Stage"
-    ],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 24,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2004-04-17T00:00:00+00:00",
-      "to": "2006-02-18T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 17,
-          "month": 4,
-          "year": 2004
-        },
-        "to": {
-          "day": 18,
-          "month": 2,
-          "year": 2006
-        }
-      },
-      "string": "17/04/2004 עד 18/02/2006"
-    },
-    "duration": "27 דקות",
-    "rating": "13+",
-    "score": 8.17,
-    "scored_by": 110722,
-    "rank": 439,
-    "popularity": 1273,
-    "members": 197506,
-    "favorites": 1361,
-    "synopsis": "Takumi Fujiwara finally joins Ryousuke and Keisuke Takahashi to create \"Project D.\" Their goal is twofold: Ryousuke wants to develop his \"High-Speed Street Racing Theory,\" while Keisuke and Takumi aim at improving their driving skills by facing powerful opponents on dangerous roads. The idea of Project D is to challenge street racing teams from other prefectures to improve both their uphill and downhill records. In order to attract the attention of the best racing teams, Ryousuke creates a dedicated website to announce the future battles of Project D and post the team's results.\n\nThe fourth season of Initial D details the hardships and successes of the members of Project D as they try to become the best street racing team outside of Gunma Prefecture.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "טאקומי פוג'יווארה מצטרף סוף-סוף לראיוסקה וקייסוקה טקהאשי ליצירת \"פרויקט D\". מטרתם היא כפולה: ראיוסקה רוצה לפתח את \"תיאורית המירוצים ברחובות במהירות גבוהה\", בעוד קייסוקה וטאקומי מכוונים לשיפור כישורי הנהיגה שלהם על ידי התמודדות עם יריבים חזקים בדרכים מסוכנות. הרעיון של פרויקט D הוא לאתגר קבוצות מירוצים ממחוזות אחרים כדי לשפר את התוצאות שלהם בעליות ובירידות. על מנת למשוך את תשומת ליבן של קבוצות המירוצים הטובות ביותר, ראיוסקה יוצר אתר אינטרנט ייעודי כדי להכריז על הקרבות העתידיים של פרויקט D ולפרסם את תוצאות הצוות.\n\nהעונה הרביעית של Initial D מפרטת את הקשיים וההצלחות של חברי פרויקט D בניסיונם להפוך לקבוצת המירוצים הטובה ביותר מחוץ למחוז גונמה.\n\n(מקור: MAL Rewrite)",
-    "background": "",
-    "background_hebrew": null,
-    "season": "אביב",
-    "year": 2004,
-    "broadcast": {
-      "day": null,
-      "time": null,
-      "timezone": "Asia/Jerusalem",
-      "string": null
-    },
-    "producers": [
-      "OB Planning"
-    ],
-    "licensors": [
-      "Funimation"
-    ],
-    "studios": [
-      "A.C.G.T."
-    ],
-    "genres": [
-      "Action / אקשן",
-      "Drama / דרמה"
-    ],
-    "themes": [
-      "Racing / מרוצים"
-    ],
-    "demographics": [
-      "Seinen / מתבגרים"
-    ]
-  },
-  {
-    "anizone_id": 19,
-    "mal_id": 19,
-    "url": "https://myanimelist.net/anime/19/Monster",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/u6rkiieors9ljtkz7r5u.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/sow4oftyxafhb7u1pxpk.webp"
-      }
-    },
-    "trailer": {
-      "url": null,
-      "embed_url": null,
-      "images": {}
-    },
-    "approved": true,
-    "title": "Monster",
-    "title_english": "Monster",
-    "title_hebrew": "מפלצת",
-    "title_japanese": "モンスター",
-    "title_synonyms": [],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 74,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2004-04-07T00:00:00+00:00",
-      "to": "2005-09-28T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 7,
-          "month": 4,
-          "year": 2004
-        },
-        "to": {
-          "day": 28,
-          "month": 9,
-          "year": 2005
-        }
-      },
-      "string": "07/04/2004 עד 28/09/2005"
-    },
-    "duration": "24 דקות",
-    "rating": "18+",
-    "score": 8.88,
-    "scored_by": 448108,
-    "rank": 25,
-    "popularity": 126,
-    "members": 1187356,
-    "favorites": 55751,
-    "synopsis": "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. That is until one night, a seemingly small event changes Dr. Tenma's life forever. While preparing to perform surgery on someone, he gets a call from the hospital director telling him to switch patients and instead perform life-saving brain surgery on a famous performer. His fellow doctors, fiancée, and the hospital director applaud his accomplishment; but because of the switch, a poor immigrant worker is dead, causing Dr. Tenma to have a crisis of conscience.\n\nSo when a similar situation arises, Dr. Tenma stands his ground and chooses to perform surgery on the young boy Johan Liebert instead of the town's mayor. Unfortunately, this choice leads to serious ramifications for Dr. Tenma—losing his social standing being one of them. However, with the mysterious death of the director and two other doctors, Dr. Tenma's position is restored. With no evidence to convict him, he is released and goes on to attain the position of hospital director. \n\nNine years later when Dr. Tenma saves the life of a criminal, his past comes back to haunt him—once again, he comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "1986, מערב גרמניה. ילד כבן 10 ושמו יוהאן ליברט, שנורה בראשו ומצבו אנוש, מובל אל בית חולים בעיר דיסלדורף. ד\"ר קנזו טנמה - רופא יפני גאון ומוערך שעובד כמנתח מוח בבית החולים - ממהר לנתח את הילד ולהוציא את שאריות הכדור מראשו. הניתוח מצליח, ויוהאן הצעיר מקבל את חייו במתנה הודות ליכולותיו המופלאות של ד\"ר טנמה, אולם הצלת הילד שאותה ביצע עלתה לד\"ר טנמה במחיר אישי כבד. כבד מאוד. אם לדייק, הבחירה שבחר באותו לילה קודר וגילוי הלב שגילה בעקבותיה חרצו באחת את גורלו של טנמה.\n9 שנים חלפו, והשפעות אירועי אותו המקרה כאילו נשכחו מאליהן. במקביל, גל רציחות מסתוריות מתחיל לגאות ברחבי גרמניה, כשהחשוד המרכזי בתיקים אלו הופך להיות לא אחר מאשר ד\"ר טנמה. טנמה, שנכח ברצח החשוד הקודם, נאלץ להמלט על נפשו בכדי לא להכלא על לא עוול בכפו. אמנם להימלטותו של טנמה יש מטרה נוספת. נוכחותו ברצח מביאה אותו לנהל מרדף יבשתי חסר סיכוי לטיהור שמו אחר הרוצח האמיתי - יוהאן, הילד שהציל לפני 9 שנים, וטנמה הוא אולי האדם היחיד שמסוגל לעצור את המפלצת שבתוכו.",
-    "background": "",
-    "background_hebrew": null,
-    "season": "אביב",
-    "year": 2004,
-    "broadcast": {
-      "day": "רביעי",
-      "time": "10:40",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי רביעי ב-10:40 (שעון ישראל)"
-    },
-    "producers": [
-      "VAP",
-      "Shogakukan-Shueisha Productions",
-      "Nippon Television Network"
-    ],
-    "licensors": [
-      "VIZ Media"
-    ],
-    "studios": [
-      "Madhouse"
-    ],
-    "genres": [
-      "Drama / דרמה",
-      "Mystery / מסתורין",
-      "Suspense / מתח"
-    ],
-    "themes": [
-      "Adult Cast / קהל בוגר",
-      "Psychological / פסיכולוגיה"
-    ],
-    "demographics": [
-      "Seinen / מתבגרים"
-    ]
-  },
-  {
     "anizone_id": 20,
     "mal_id": 20,
     "url": "https://myanimelist.net/anime/20/Naruto",
@@ -447,6 +90,98 @@
     ],
     "demographics": [
       "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 19,
+    "mal_id": 19,
+    "url": "https://myanimelist.net/anime/19/Monster",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/u6rkiieors9ljtkz7r5u.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/sow4oftyxafhb7u1pxpk.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Monster",
+    "title_english": "Monster",
+    "title_hebrew": "מפלצת",
+    "title_japanese": "モンスター",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 74,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2004-04-07T00:00:00+00:00",
+      "to": "2005-09-28T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 7,
+          "month": 4,
+          "year": 2004
+        },
+        "to": {
+          "day": 28,
+          "month": 9,
+          "year": 2005
+        }
+      },
+      "string": "07/04/2004 עד 28/09/2005"
+    },
+    "duration": "24 דקות",
+    "rating": "18+",
+    "score": 8.88,
+    "scored_by": 448108,
+    "rank": 25,
+    "popularity": 126,
+    "members": 1187356,
+    "favorites": 55751,
+    "synopsis": "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. That is until one night, a seemingly small event changes Dr. Tenma's life forever. While preparing to perform surgery on someone, he gets a call from the hospital director telling him to switch patients and instead perform life-saving brain surgery on a famous performer. His fellow doctors, fiancée, and the hospital director applaud his accomplishment; but because of the switch, a poor immigrant worker is dead, causing Dr. Tenma to have a crisis of conscience.\n\nSo when a similar situation arises, Dr. Tenma stands his ground and chooses to perform surgery on the young boy Johan Liebert instead of the town's mayor. Unfortunately, this choice leads to serious ramifications for Dr. Tenma—losing his social standing being one of them. However, with the mysterious death of the director and two other doctors, Dr. Tenma's position is restored. With no evidence to convict him, he is released and goes on to attain the position of hospital director. \n\nNine years later when Dr. Tenma saves the life of a criminal, his past comes back to haunt him—once again, he comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "1986, מערב גרמניה. ילד כבן 10 ושמו יוהאן ליברט, שנורה בראשו ומצבו אנוש, מובל אל בית חולים בעיר דיסלדורף. ד\"ר קנזו טנמה - רופא יפני גאון ומוערך שעובד כמנתח מוח בבית החולים - ממהר לנתח את הילד ולהוציא את שאריות הכדור מראשו. הניתוח מצליח, ויוהאן הצעיר מקבל את חייו במתנה הודות ליכולותיו המופלאות של ד\"ר טנמה, אולם הצלת הילד שאותה ביצע עלתה לד\"ר טנמה במחיר אישי כבד. כבד מאוד. אם לדייק, הבחירה שבחר באותו לילה קודר וגילוי הלב שגילה בעקבותיה חרצו באחת את גורלו של טנמה.\n9 שנים חלפו, והשפעות אירועי אותו המקרה כאילו נשכחו מאליהן. במקביל, גל רציחות מסתוריות מתחיל לגאות ברחבי גרמניה, כשהחשוד המרכזי בתיקים אלו הופך להיות לא אחר מאשר ד\"ר טנמה. טנמה, שנכח ברצח החשוד הקודם, נאלץ להמלט על נפשו בכדי לא להכלא על לא עוול בכפו. אמנם להימלטותו של טנמה יש מטרה נוספת. נוכחותו ברצח מביאה אותו לנהל מרדף יבשתי חסר סיכוי לטיהור שמו אחר הרוצח האמיתי - יוהאן, הילד שהציל לפני 9 שנים, וטנמה הוא אולי האדם היחיד שמסוגל לעצור את המפלצת שבתוכו.",
+    "background": "",
+    "background_hebrew": "",
+    "season": "אביב",
+    "year": 2004,
+    "broadcast": {
+      "day": "רביעי",
+      "time": "10:40",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי רביעי ב-10:40 (שעון ישראל)"
+    },
+    "producers": [
+      "VAP",
+      "Shogakukan-Shueisha Productions",
+      "Nippon Television Network"
+    ],
+    "licensors": [
+      "VIZ Media"
+    ],
+    "studios": [
+      "Madhouse"
+    ],
+    "genres": [
+      "Drama / דרמה",
+      "Mystery / מסתורין",
+      "Suspense / מתח"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר",
+      "Psychological / פסיכולוגיה"
+    ],
+    "demographics": [
+      "Seinen / מתבגרים"
     ]
   }
 ]

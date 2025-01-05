@@ -175,7 +175,7 @@ app.post('/api/pending-edits/:editId/approve', (req, res) => {
   // מוסיפים ל-approvedData.json
   const approvedArr = loadApproved()
   approvedArr.push(finalData)
-  saveApprovedData(approvedArr)
+  saveApproved(approvedArr) // שימוש בפונקציה הנכונה
 
   // מסירים מה-pendingEdits
   pendingEdits.splice(idx, 1)

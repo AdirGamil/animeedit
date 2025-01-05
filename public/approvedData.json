@@ -1,110 +1,18 @@
 [
   {
-    "anizone_id": 1,
-    "mal_id": 1,
-    "url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+    "anizone_id": 18,
+    "mal_id": 18,
+    "url": "https://myanimelist.net/anime/18/Initial_D_Fourth_Stage",
     "images": {
       "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/4/19644.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\1_Cowboy_Bebop\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/1_Cowboy_Bebop/hutnuxs0zje4ckgfa2uk.webp"
+        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/zq0zypemsd8hcyzoxmrf.webp"
       },
       "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/4/19644l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\1_Cowboy_Bebop\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/1_Cowboy_Bebop/xv6hvqpap78cldnzjlda.webp"
-      }
-    },
-    "trailer": {
-      "url": "https://www.youtube.com/watch?v=gY5nDXOtv_o",
-      "embed_url": "https://www.youtube.com/embed/gY5nDXOtv_o?enablejsapi=1&wmode=opaque&autoplay=1",
-      "images": {
-        "large_image_url": "https://img.youtube.com/vi/gY5nDXOtv_o/hqdefault.jpg"
-      }
-    },
-    "approved": true,
-    "title": "Cowboy Bebop",
-    "title_english": "Cowboy Bebop",
-    "title_hebrew": "קאובוי ביבופccs",
-    "title_japanese": "カウボーイビバップ",
-    "title_synonyms": [],
-    "type": "TV",
-    "source": "Original",
-    "episodes": 26,
-    "status": "הסתיים",
-    "aired": {
-      "from": "1998-04-03T00:00:00+00:00",
-      "to": "1999-04-24T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 3,
-          "month": 4,
-          "year": 1998
-        },
-        "to": {
-          "day": 24,
-          "month": 4,
-          "year": 1999
-        }
-      },
-      "string": "03/04/1998 עד 24/04/1999"
-    },
-    "duration": "24 דקות",
-    "rating": "18+",
-    "score": 8.75,
-    "scored_by": 995330,
-    "rank": 46,
-    "popularity": 43,
-    "members": 1927138,
-    "favorites": 84702,
-    "synopsis": "Crime is timeless. By the year 2071, humanity has expanded across the galaxy, filling the surface of other planets with settlements like those on Earth. These new societies are plagued by murder, drug use, and theft, and intergalactic outlaws are hunted by a growing number of tough bounty hunters.\n\nSpike Spiegel and Jet Black pursue criminals throughout space to make a humble living. Beneath his goofy and aloof demeanor, Spike is haunted by the weight of his violent past. Meanwhile, Jet manages his own troubled memories while taking care of Spike and the Bebop, their ship. The duo is joined by the beautiful con artist Faye Valentine, odd child Edward Wong Hau Pepelu Tivrusky IV, and Ein, a bioengineered Welsh Corgi.\n\nWhile developing bonds and working to catch a colorful cast of criminals, the Bebop crew's lives are disrupted by a menace from Spike's past. As a rival's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "השנה היא 2071. זוג השותפים ספייק שפיגל וג'ק בלאק משוטטים יחדיו ברחבי מערכת השמש בספינת חלל ישנה ושמה \"ביבופ\" (Bebop). השניים מתפרנסים מציד ראשים של פושעים בין גלקטיים.\n\nהסדרה אט אט חושפת עוד דמויות ואת עברן הכואב וגדוש הטרגדיות.",
-    "background": "When Cowboy Bebop first aired in spring of 1998 on TV Tokyo, only episodes 2, 3, 7-15, and 18 were broadcast, it was concluded with a recap special known as Yose Atsume Blues. This was due to anime censorship having increased following the big controversies over Evangelion, as a result most of the series was pulled from the air due to violent content. Satellite channel WOWOW picked up the series in the fall of that year and aired it in its entirety uncensored. Cowboy Bebop was not a ratings hit in Japan, but sold over 19,000 DVD units in the initial release run, and 81,000 overall. Protagonist Spike Spiegel won Best Male Character, and Megumi Hayashibara won Best Voice Actor for her role as Faye Valentine in the 1999 and 2000 Anime Grand Prix, respectively. Cowboy Bebop's biggest influence has been in the United States, where it premiered on Adult Swim in 2001 with many reruns since. The show's heavy Western influence struck a chord with American viewers, where it became a \"gateway drug\" to anime aimed at adult audiences.",
-    "background_hebrew": "כאשר קאובוי ביבופ שודר לראשונה באביב 1998 על TV Tokyo, רק הפרקים 2, 3, 7-15, ו-18 הוקרנו, והוא הסתיים עם סיכום מיוחד הידוע בשם Yose Atsume Blues. זה קרה בעקבות הגברת הצנזורה על אנימה לאחר מחלוקות גדולות סביב אוונגליון, ולכן רוב הסדרה הוסרה מהשידור בשל תכנים אלימים. ערוץ הלוויין WOWOW לקח את הסדרה בסתיו של אותה שנה ושידר אותה במלואה ללא צנזורה. קאובוי ביבופ לא היה להיט ברייטינג ביפן, אבל מכר מעל 19,000 יחידות DVD בהפצה הראשונית, ובסך הכל 81,000. הדמות הראשית ספייק ספיגל זכתה בתואר הדמות הזכרית הטובה ביותר, ומגומי היאשיברה זכתה בפרס הקול הטוב ביותר על תפקידה בתור פיי ולנטיין ב-Anime Grand Prix של 1999 ו-2000 בהתאמה. ההשפעה הגדולה ביותר של קאובוי ביבופ הייתה בארצות הברית, שם הוקרן לראשונה ב-Adult Swim ב-2001 עם שידורים חוזרים רבים לאחר מכן. ההשפעה המערבית הכבדה של התוכנית נגעה בצלילים של הצופים האמריקאים, שם היא הפכה ל\"סם שער\" לאנימה שמיועדת לקהל מבוגר.\n\nההפצה היפנית על ידי Victor Entertainment כוללת פתיחות שונות המתייחסות לפרק הספציפי בו הן מנוגנות. ההפצות הראשוניות של Geneon Entertainment USA (שהייתה ידועה אז בתור Pioneer) על קלטות VHS ו-DVD (סינגלים, Signature Series וקופסאות) השתמשו רק בפתיחה הראשונה בכל פרק. זה קרה כיוון שבעל הרישיון היפני סיפק להם חומרים נקיים רק לפתיחה הראשונה כדי לשים עליהם את הקרדיטים באנגלית. Geneon תיקנה מאוחר יותר את הטעות הזו בהפצות קונסולת הפח המוגבלות ב-2005/2006, כמו גם על סינגלי ה-Remix. לאחר קריסת Geneon USA בסוף 2007, התוכנית יצאה מהדפסה. כש-FUNimation Entertainment לקחה את התוכנית ב-2010 והפיצה אותה, הם חזרו על הטעות של Geneon בשימוש בפתיחה הראשונה בלבד בכל פרק. טעות זו תוקנה מאוחר יותר ב-2013 בהפצה מחדש על Anime Classics.\n\nEyeshield 21 היה מתוכנן במקור לשדר בצפון אמריקה על Toonami Jetstream ו-NFL Rush בשיתוף פעולה עם ליגת הפוטבול הלאומית, אך התוכנית נכשלה והאנימה עשתה את הבכורה שלה רק על Toonami Jetstream, אשר לאחר מכן ביוטרדה את הסדרה. לאחר מכן היא הפכה לזמינה במלואה ב-Crunchyroll. מאוחר יותר Sentai Filmworks ריכזו והפיצו את 52 הפרקים הראשונים על DVD בין השנים 2010 ל-2011.\n\nHachimitsu to Clover הייתה האנימה הראשונה ששודרה על Fuji Television's noitaminA block.\n\nHungry Heart: Wild Striker שוחררה על DVD על ידי Pony Canyon ביפן מה-19 בפברואר 2003 עד ה-17 במרץ 2004.\n\nנארוטו מעבד את 27 הכרכים הראשונים של המנגה המקורית. היא קיבלה מספר פרסים במהלך השידור שלה, כולל \"פרס תוכנית האנימציה המלאה הטובה ביותר\" בפרסי UStv השלישיים ו\"התוכנית המונפשת הטובה ביותר\" ה-38 ב-Top 100 Animated Series של IGN.",
-    "season": "אביב",
-    "year": 1998,
-    "broadcast": {
-      "day": "שבת",
-      "time": "11:00",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי שבת ב-11:00 (שעון ישראל)"
-    },
-    "producers": [
-      "Bandai Visual",
-      "Victor Entertainment",
-      "Audio Planning U"
-    ],
-    "licensors": [
-      "Funimation"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
-    "genres": [
-      "Action / אקשן",
-      "Award Winning / זוכה פרס",
-      "Sci-Fi / מדע בדיוני"
-    ],
-    "themes": [
-      "Adult Cast / קהל בוגר",
-      "Space / חלל"
-    ],
-    "demographics": []
-  },
-  {
-    "anizone_id": 5,
-    "mal_id": 5,
-    "url": "https://myanimelist.net/anime/5/Cowboy_Bebop__Tengoku_no_Tobira",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1439/93480.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\5_Cowboy_Bebop__The_Movie\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078991/AnimeImages/5_Cowboy_Bebop__The_Movie/smim9zgp6mqj24ktvlam.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1439/93480l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\5_Cowboy_Bebop__The_Movie\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/5_Cowboy_Bebop__The_Movie/sycfsdemb309o34jdiqb.webp"
+        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/rxgluvooixdp9kq7bv7v.webp"
       }
     },
     "trailer": {
@@ -113,48 +21,48 @@
       "images": {}
     },
     "approved": true,
-    "title": "Cowboy Bebop: Tengoku no Tobira",
-    "title_english": "Cowboy Bebop: The Movie",
-    "title_hebrew": "קאובוי ביבופ: דופק על דלת",
-    "title_japanese": "カウボーイビバップ 天国の扉",
+    "title": "Initial D Fourth Stage",
+    "title_english": "",
+    "title_hebrew": "ד' (די) שלב ",
+    "title_japanese": "頭文字〈イニシャル〉D FOURTH STAGE",
     "title_synonyms": [
-      "Cowboy Bebop: Knockin' on Heaven's Door"
+      "Initial D 4th Stage"
     ],
-    "type": "Movie",
-    "source": "Original",
-    "episodes": 1,
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 24,
     "status": "הסתיים",
     "aired": {
-      "from": "2001-09-01T00:00:00+00:00",
-      "to": null,
+      "from": "2004-04-17T00:00:00+00:00",
+      "to": "2006-02-18T00:00:00+00:00",
       "prop": {
         "from": {
-          "day": 1,
-          "month": 9,
-          "year": 2001
+          "day": 17,
+          "month": 4,
+          "year": 2004
         },
         "to": {
-          "day": null,
-          "month": null,
-          "year": null
+          "day": 18,
+          "month": 2,
+          "year": 2006
         }
       },
-      "string": "01/09/2001"
+      "string": "17/04/2004 עד 18/02/2006"
     },
-    "duration": "155 דקות",
-    "rating": "18+",
-    "score": 8.38,
-    "scored_by": 221045,
-    "rank": 209,
-    "popularity": 634,
-    "members": 389545,
-    "favorites": 1655,
-    "synopsis": "Another day, another bounty—such is the life of the often unlucky crew of the Bebop. However, this routine is interrupted when Faye, who is chasing a fairly worthless target on Mars, witnesses an oil tanker suddenly explode, causing mass hysteria. As casualties mount due to a strange disease spreading through the smoke from the blast, a whopping three hundred million woolong price is placed on the head of the supposed perpetrator.\n\nWith lives at stake and a solution to their money problems in sight, the Bebop crew springs into action. Spike, Jet, Faye, and Edward, followed closely by Ein, split up to pursue different leads across Alba City. Through their individual investigations, they discover a cover-up scheme involving a pharmaceutical company, revealing a plot that reaches much further than the ragtag team of bounty hunters could have realized.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "ספייק שפיגל וחבורתו יוצאים למסע צייד של פושע מסוכן ומבוקש במיוחד. תוך כדי, הם נקלעים לסיפור שחיתות ממשלתית קלאסי שבראשו עומד אדם מסוכן.\n",
+    "duration": "27 דקות",
+    "rating": "13+",
+    "score": 8.17,
+    "scored_by": 110722,
+    "rank": 439,
+    "popularity": 1273,
+    "members": 197506,
+    "favorites": 1361,
+    "synopsis": "Takumi Fujiwara finally joins Ryousuke and Keisuke Takahashi to create \"Project D.\" Their goal is twofold: Ryousuke wants to develop his \"High-Speed Street Racing Theory,\" while Keisuke and Takumi aim at improving their driving skills by facing powerful opponents on dangerous roads. The idea of Project D is to challenge street racing teams from other prefectures to improve both their uphill and downhill records. In order to attract the attention of the best racing teams, Ryousuke creates a dedicated website to announce the future battles of Project D and post the team's results.\n\nThe fourth season of Initial D details the hardships and successes of the members of Project D as they try to become the best street racing team outside of Gunma Prefecture.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "טאקומי פוג'יווארה מצטרף סוף-סוף לראיוסקה וקייסוקה טקהאשי ליצירת \"פרויקט D\". מטרתם היא כפולה: ראיוסקה רוצה לפתח את \"תיאורית המירוצים ברחובות במהירות גבוהה\", בעוד קייסוקה וטאקומי מכוונים לשיפור כישורי הנהיגה שלהם על ידי התמודדות עם יריבים חזקים בדרכים מסוכנות. הרעיון של פרויקט D הוא לאתגר קבוצות מירוצים ממחוזות אחרים כדי לשפר את התוצאות שלהם בעליות ובירידות. על מנת למשוך את תשומת ליבן של קבוצות המירוצים הטובות ביותר, ראיוסקה יוצר אתר אינטרנט ייעודי כדי להכריז על הקרבות העתידיים של פרויקט D ולפרסם את תוצאות הצוות.\n\nהעונה הרביעית של Initial D מפרטת את הקשיים וההצלחות של חברי פרויקט D בניסיונם להפוך לקבוצת המירוצים הטובה ביותר מחוץ למחוז גונמה.\n\n(מקור: MAL Rewrite)",
     "background": "",
     "background_hebrew": "",
-    "season": null,
-    "year": null,
+    "season": "אביב",
+    "year": 2004,
     "broadcast": {
       "day": null,
       "time": null,
@@ -162,398 +70,23 @@
       "string": null
     },
     "producers": [
-      "Sunrise",
-      "Bandai Visual"
-    ],
-    "licensors": [
-      "Sony Pictures Entertainment",
-      "Funimation"
-    ],
-    "studios": [
-      "Bones"
-    ],
-    "genres": [
-      "Action / אקשן",
-      "Sci-Fi / מדע בדיוני"
-    ],
-    "themes": [
-      "Adult Cast / קהל בוגר",
-      "Space / חלל"
-    ],
-    "demographics": []
-  },
-  {
-    "anizone_id": 6,
-    "mal_id": 6,
-    "url": "https://myanimelist.net/anime/6/Trigun",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/opb2zy7eu7tdqpr3wtbj.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/cba0lmzi1jmmm7umebys.webp"
-      }
-    },
-    "trailer": {
-      "url": "https://www.youtube.com/watch?v=bJVyIXeUznY",
-      "embed_url": "https://www.youtube.com/embed/bJVyIXeUznY?enablejsapi=1&wmode=opaque&autoplay=1",
-      "images": {}
-    },
-    "approved": true,
-    "title": "Trigun",
-    "title_english": "Trigun",
-    "title_hebrew": "טריגאןsss",
-    "title_japanese": "トライガン",
-    "title_synonyms": [],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 26,
-    "status": "הסתיים",
-    "aired": {
-      "from": "1998-04-01T00:00:00+00:00",
-      "to": "1998-09-30T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 1,
-          "month": 4,
-          "year": 1998
-        },
-        "to": {
-          "day": 30,
-          "month": 9,
-          "year": 1998
-        }
-      },
-      "string": "01/04/1998 עד 30/09/1998"
-    },
-    "duration": "24 דקות",
-    "rating": "13+",
-    "score": 8.22,
-    "scored_by": 382146,
-    "rank": 364,
-    "popularity": 259,
-    "members": 786281,
-    "favorites": 16459,
-    "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs.\n\nWith his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "סיפור הסדרה מתרחש בכוכב אחר שמזכיר את המערב הפרוע. בכוכב הזה עומד איש אחד במרכז העניינים. האיש הזה, \"וואש\", שראשו שווה 60,000,000,000 דולר בעוון סיפורים בדויים שעוברים מפה לאוזן באיזור, עובר הרפתקאות מוזרות ומסעירות במהלך הסדרה.\nוואש הוא אקדחן מצוין ותמים שנאלץ להתחמק מעשרות ציידי ראשים שרוצים את הפרס העצום שמונח על ראשו. במהלך פגישה לא נעימה עם מספר ציידי ראשים, הוא מכיר לראשונה את מריל סטרייף ומילי טומפסון, שתי סוכנות ביטוח קשוחות היודעות להשתמש באקדח, שמחפשות אחר ואש הידוע. לאחר שדרכם של ואש וסוכנות הביטוח (כשאין להן אפילו שמץ של מושג שהאיש המוזר שהן הרגע פגשו הוא ואש שהן מחפשות) נפרדות, הם ממשיכים להיפגש שוב ושוב במצבים שונים ומשונים, ורק לאחר זמן רב של חיפושים הן מבינות שבעצם הוא האיש שאחריו הן מחפשות.\nבמהלך הסדרה, וואש עובר חוויות מוזרות, מצחיקות ומסעירות, שמהן הוא תמיד מצליח להתחמק בעזרת כישורי האקדח שלו, אבל בעיקר בזכות המון מזל.",
-    "background": "The Japanese release by Victor Entertainment has different openings relating to the specific episode it's played on. The initial Geneon Entertainment USA (then known as Pioneer) releases on VHS and DVD (singles, Signature Series, and box set) used only the first opening on each episode. This was due to the Japanese licensor providing them clean materials for only the first opening to put the English credits on. Geneon later fixed this mistake on their Limited Edition tin releases in 2005/2006, as well as on the Remix singles. Following Geneon USA's demise in late 2007, the show went out of print. When FUNimation Entertainment picked up the show in 2010 and released it, they repeated Geneon's mistake of using only the first opening on every episode. This mistake was later fixed in 2013 on the Anime Classics re-release.",
-    "background_hebrew": "",
-    "season": "אביב",
-    "year": 1998,
-    "broadcast": {
-      "day": "חמישי",
-      "time": "11:15",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי חמישי ב-11:15 (שעון ישראל)"
-    },
-    "producers": [
-      "Victor Entertainment"
+      "OB Planning"
     ],
     "licensors": [
       "Funimation"
     ],
     "studios": [
-      "Madhouse"
+      "A.C.G.T."
     ],
     "genres": [
       "Action / אקשן",
-      "Adventure / הרפתקאות",
-      "Sci-Fi / מדע בדיוני"
+      "Drama / דרמה"
     ],
     "themes": [
-      "Adult Cast / קהל בוגר"
+      "Racing / מרוצים"
     ],
     "demographics": [
-      "Shounen / נער"
-    ]
-  },
-  {
-    "anizone_id": 7,
-    "mal_id": 7,
-    "url": "https://myanimelist.net/anime/7/Witch_Hunter_Robin",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/7_Witch_Hunter_Robin/phhnxz93wmvgyjjkmyot.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/7_Witch_Hunter_Robin/zecgs06qcoczbqlmjfbp.webp"
-      }
-    },
-    "trailer": {
-      "url": "https://www.youtube.com/watch?v=7UkaILjPk8M",
-      "embed_url": "https://www.youtube.com/embed/7UkaILjPk8M?enablejsapi=1&wmode=opaque&autoplay=1",
-      "images": {}
-    },
-    "approved": true,
-    "title": "Witch Hunter Robin",
-    "title_english": "Witch Hunter Robin",
-    "title_hebrew": "ציידת המכשפות רוביןsssssss",
-    "title_japanese": "Witch Hunter ROBIN (ウイッチハンターロビン)",
-    "title_synonyms": [
-      "WHR"
-    ],
-    "type": "TV",
-    "source": "Original",
-    "episodes": 26,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2002-07-03T00:00:00+00:00",
-      "to": "2002-12-25T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 3,
-          "month": 7,
-          "year": 2002
-        },
-        "to": {
-          "day": 25,
-          "month": 12,
-          "year": 2002
-        }
-      },
-      "string": "03/07/2002 עד 25/12/2002"
-    },
-    "duration": "25 דקות",
-    "rating": "13+",
-    "score": 7.24,
-    "scored_by": 44782,
-    "rank": 3120,
-    "popularity": 1911,
-    "members": 120479,
-    "favorites": 656,
-    "synopsis": "Though hidden away from the general public, Witches—those with supernatural powers—have always existed in human societies. Neither numerous nor inherently evil, Witches are nonetheless capable of creating disorder by misusing their powers for criminal means. The task of solving supernatural crimes falls outside of the jurisdiction of normal authorities and is instead handled by the Solomon organization.\n\nHaving finished her training in Italy, Robin Sena transfers to Solomon's local Japanese branch, STNJ. Possessing powerful pyrokinetic abilities, she is herself a Witch, putting her at odds with STNJ's methods of dealing with rogue Witches. In particular, Robin opposes the use of an elixir called Orbo, which can weaken or even neutralize a Witch's powers. If Robin wants to find her place within the organization, she must find a way to navigate the internal politics of Solomon while also handling the threat of hostile Witches—but both seem to be dangerous for very different reasons.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "למרות שהן מוסתרות מעיני הציבור הרחב, מכשפות – אלה עם כוחות על-טבעיים – תמיד היו קיימות בחברות אנושיות. הן לא רבות ולא רשעיות מטבען, אבל מכשפות יכולות לגרום לכאוס כאשר הן מנצלות את כוחותיהן למטרות פשע. המשימה לפתור פשעים על-טבעיים חורגת מסמכות הרשויות הרגילות, והיא במקום זאת מטופלת על ידי הארגון \"סולומון\".\n\nלאחר שסיימה את הכשרתה באיטליה, רובין סנה מצטרפת לסניף המקומי של \"סולומון\" ביפן, ה-STNJ. עם יכולות פירוקינטיות עוצמתיות, היא בעצמה מכשפה, מה שמסבך אותה עם הדרכים של STNJ להתמודד עם מכשפות מורדות. במיוחד, רובין מתנגדת לשימוש באליקסיר בשם אורבו, שיכול להחליש או אפילו לנטרל את כוחותיה של מכשפה. אם רובין רוצה למצוא את מקומה בארגון, היא חייבת לנווט בפוליטיקה הפנימית של \"סולומון\" תוך התמודדות עם האיום של מכשפות עוינות – אבל נראה ששני הדברים האלה מסוכנים מסיבות שונות מאוד.\n\n(מקור: MAL Rewrite)",
-    "background": "",
-    "background_hebrew": "",
-    "season": "קיץ",
-    "year": 2002,
-    "broadcast": {
-      "day": "רביעי",
-      "time": "11:25",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי רביעי ב-11:25 (שעון ישראל)"
-    },
-    "producers": [
-      "Bandai Visual",
-      "Dentsu",
-      "Victor Entertainment"
-    ],
-    "licensors": [
-      "Funimation",
-      "Bandai Entertainment"
-    ],
-    "studios": [
-      "Sunrise"
-    ],
-    "genres": [
-      "Action / אקשן",
-      "Drama / דרמה",
-      "Mystery / מסתורין",
-      "Supernatural / על טבעי"
-    ],
-    "themes": [
-      "Detective / בלשות"
-    ],
-    "demographics": []
-  },
-  {
-    "anizone_id": 15,
-    "mal_id": 15,
-    "url": "https://myanimelist.net/anime/15/Eyeshield_21",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1079/133529.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\15_Eyeshield_21\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/15_Eyeshield_21/mqhgrnwn1qjo0mxbhukj.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1079/133529l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\15_Eyeshield_21\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/15_Eyeshield_21/u5gvi2xkdlibqsk2twmr.webp"
-      }
-    },
-    "trailer": {
-      "url": null,
-      "embed_url": null,
-      "images": {}
-    },
-    "approved": true,
-    "title": "Eyeshield 21",
-    "title_english": "",
-    "title_hebrew": "איישילד 21",
-    "title_japanese": "アイシールド21",
-    "title_synonyms": [
-      "Eyeshield21"
-    ],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 145,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2005-04-06T00:00:00+00:00",
-      "to": "2008-03-19T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 6,
-          "month": 4,
-          "year": 2005
-        },
-        "to": {
-          "day": 19,
-          "month": 3,
-          "year": 2008
-        }
-      },
-      "string": "06/04/2005 עד 19/03/2008"
-    },
-    "duration": "23 דקות",
-    "rating": "13+",
-    "score": 7.91,
-    "scored_by": 90727,
-    "rank": 789,
-    "popularity": 1338,
-    "members": 187934,
-    "favorites": 2048,
-    "synopsis": "Shy, reserved, and small-statured, Deimon High School student Sena Kobayakawa is the perfect target for bullies. However, as a result of running errands throughout his life, Sena has become agile and developed a skill for avoiding crowds of people. After the cunning Youichi Hiruma—captain of the Deimon Devil Bats football team—witnesses Sena's rapid legs in motion, he coerces the timid boy into joining his squad.\n\nAs Hiruma wants to conceal Sena's identity from other clubs, Sena is forced to hide under the visored helmet of \"Eyeshield 21,\" a mysterious running back wearing the number 21 jersey. The legendary Eyeshield 21 can supposedly run at the speed of light and has achieved remarkable feats in the United States during his time at the Notre Dame College.\n\nAccustomed to avoiding his problems in the past, Sena's specialty might just help him become the new secret weapon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "סנה קובאקאוה, תלמיד תיכון דיימון, ביישן, מופנם ובעל מבנה גוף קטן, הוא מטרה מושלמת להצקות בריונים. עם זאת, כתוצאה מביצוע סידורים לאורך חייו, סנה פיתח את היכולת להתחמק ממערכות. לאחר שהונצ'י הירומה, הקפטן הערמומי של קבוצת הפוטבול Deimon Devil Bats, צפה בכך שסנה רץ במהירות, הוא מכריח את הבחור הביישן להצטרף לקבוצתו.\n\nכשהירומה רוצה להסתיר את זהותו של סנה מקבוצות אחרות, סנה נאלץ להסתתר תחת קסדת Eyeshield 21, בטח אחד מבעלי הגב הרץ המסתוריים שלובש את ג'רזי מספר 21. לפי השמועות, Eyeshield 21 האגדי יכול לרוץ במהירות האור והגיע להישגים יוצאים מן הכלל בארצות הברית במהלך תקופתו בקולג' Notre Dame.\n\nמורגל להימנע מבעיותיו בעבר, המיומנות המיוחדת של סנה עשויה לעזור לו להפוך להיות הנשק הסודי החדש של ה-Deimon Devil Bats. ככל שהוא מתקשר עם חברי הקבוצה שלו, סנה מתחיל לפתח ביטחון עצמי ולטוות קשרים חשובים לאורך הדרך.\n\n(מקור: MAL Rewrite)",
-    "background": "Eyeshield 21 was original scheduled to stream in North America on Toonami Jetstream and NFL Rush in collaboration with the National Football League, but the plan fell through and the anime made its debut only on Toonami Jetstream, which later dropped the series. It would then become available in its entirety on Crunchyroll. Sentai Filmworks later licensed and released the first 52 episodes on DVD from 2010 to 2011.",
-    "background_hebrew": "",
-    "season": "אביב",
-    "year": 2005,
-    "broadcast": {
-      "day": "רביעי",
-      "time": "05:00",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי רביעי ב-05:00 (שעון ישראל)"
-    },
-    "producers": [
-      "TV Tokyo",
-      "Nihon Ad Systems",
-      "TV Tokyo Music",
-      "Shueisha"
-    ],
-    "licensors": [
-      "VIZ Media",
-      "Sentai Filmworks"
-    ],
-    "studios": [
-      "Gallop"
-    ],
-    "genres": [
-      "Sports / ספורט"
-    ],
-    "themes": [
-      "Team Sports / ספורט קבוצתי"
-    ],
-    "demographics": [
-      "Shounen / נער"
-    ]
-  },
-  {
-    "anizone_id": 16,
-    "mal_id": 16,
-    "url": "https://myanimelist.net/anime/16/Hachimitsu_to_Clover",
-    "images": {
-      "image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1301/133577.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\16_Honey_and_Clover\\image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/16_Honey_and_Clover/ghrjjbyfyjod5dkbmw9h.webp"
-      },
-      "large_image_url": {
-        "original_url": "https://cdn.myanimelist.net/images/anime/1301/133577l.webp",
-        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\16_Honey_and_Clover\\large_image_url.webp",
-        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/16_Honey_and_Clover/toaoj7xsts0fk1zifxza.webp"
-      }
-    },
-    "trailer": {
-      "url": "https://www.youtube.com/watch?v=6TN4a0kZuXg",
-      "embed_url": "https://www.youtube.com/embed/6TN4a0kZuXg?enablejsapi=1&wmode=opaque&autoplay=1",
-      "images": {}
-    },
-    "approved": true,
-    "title": "Hachimitsu to Clover",
-    "title_english": "Honey and Clover",
-    "title_hebrew": "דבש ותלתןחדשדהש",
-    "title_japanese": "ハチミツとクローバー",
-    "title_synonyms": [
-      "HachiKuro",
-      "Honey & Clover"
-    ],
-    "type": "TV",
-    "source": "Manga",
-    "episodes": 24,
-    "status": "הסתיים",
-    "aired": {
-      "from": "2005-04-15T00:00:00+00:00",
-      "to": "2005-09-27T00:00:00+00:00",
-      "prop": {
-        "from": {
-          "day": 15,
-          "month": 4,
-          "year": 2005
-        },
-        "to": {
-          "day": 27,
-          "month": 9,
-          "year": 2005
-        }
-      },
-      "string": "15/04/2005 עד 27/09/2005"
-    },
-    "duration": "23 דקות",
-    "rating": "13+",
-    "score": 7.99,
-    "scored_by": 84900,
-    "rank": 678,
-    "popularity": 928,
-    "members": 273837,
-    "favorites": 4161,
-    "synopsis": "Yuuta Takemoto, a sophomore at an arts college, shares a cheap apartment with two seniors—the eccentric Shinobu Morita, who keeps failing to graduate due to his absenteeism, and the sensible Takumi Mayama, who acts as a proper senior to Takemoto, often looking out for him.\n\nTakemoto had not given much thought to his future until one fine spring day, when he meets the endearing Hagumi Hanamoto and falls in love at first sight. Incredibly gifted in the arts, Hagumi enrolls in Takemoto's university and soon befriends the popular pottery student Ayumi Yamada. Ayumi is already well acquainted with the three flatmates and secretly harbors deep feelings for one of them.\n\nHachimitsu to Clover is a heartwarming tale of youth, love, soul-searching, and self-discovery, intricately woven through the complex relationships between five dear friends.\n\n[Written by MAL Rewrite]",
-    "synopsis_hebrew": "יוטה טקמוטו, סטודנט שנה שנייה במכללה לאמנות, חולק דירה זולה עם שני סטודנטים בכירים – שינובו מוריטה האקסצנטרי, שממשיך להיכשל לסיים את לימודיו בשל היעדרויותיו, וטאקומי מיאמה ההגיוני, שמשמש כמעין בכיר מוביל לטקמוטו ולעיתים קרובות דואג לו.\n\nטקמוטו לא חשב הרבה על עתידו עד אותו יום אביבי יפהפה, כאשר פגש את הקסומה הגומי הנאמוטו והתאהב בה ממבט ראשון. מוכשרת מאוד באמנויות, הגומי נרשמת לאוניברסיטה של טקמוטו ומתחברת במהרה לסטודנטית הקדרות הפופולרית, איום יאמדה. איום כבר מעורה היטב עם שלושת השותפים לחדר שלה ומחזיקה בסודות רגשות עמוקים כלפי אחד מהם.\n\nחצימצו לקלוור הוא סיפור חם לב על נעורים, אהבה, חיפוש עצמי וגילוי עצמי, הנארג במורכבות דרך הקשרים המסובכים בין חמישה חברים קרובים.\n\n(מקור: MAL Rewrite)",
-    "background": "Hachimitsu to Clover was the first anime to air on Fuji Television's noitaminA block.",
-    "background_hebrew": "",
-    "season": "אביב",
-    "year": 2005,
-    "broadcast": {
-      "day": "שישי",
-      "time": "10:35",
-      "timezone": "Asia/Jerusalem",
-      "string": "בימי שישי ב-10:35 (שעון ישראל)"
-    },
-    "producers": [
-      "Dentsu",
-      "Genco",
-      "Fuji TV",
-      "Asmik Ace",
-      "Shueisha"
-    ],
-    "licensors": [
-      "VIZ Media",
-      "Discotek Media"
-    ],
-    "studios": [
-      "J.C.Staff"
-    ],
-    "genres": [
-      "Comedy / קומדיה",
-      "Drama / דרמה",
-      "Romance / רומנטיקה"
-    ],
-    "themes": [
-      "Adult Cast / קהל בוגר",
-      "Love Polygon / אהבה יותר מאישה אחת",
-      "Visual Arts / אומנות חזותית"
-    ],
-    "demographics": [
-      "Josei / נשים"
+      "Seinen / מתבגרים"
     ]
   }
 ]
