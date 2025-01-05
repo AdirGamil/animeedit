@@ -1,7 +1,10 @@
 /***********************************************
- * server.js - using Mongoose (no local JSON)
+ * server.js - using Mongoose (no local JSON),
+ * with WebSockets to auto-update anime list
+ * + Pagination support
  ***********************************************/
 import dotenv from 'dotenv'
+// נטען את .env רק בסביבה לא פרודקשן (מקומית)
 if (process.env.NODE_ENV !== 'production') {
   dotenv.config()
 }
@@ -45,35 +48,60 @@ const io = new Server(httpServer, {
 let locks = []
 let pendingEdits = []
 
-// 6) הגדרת סכמות ו-Models (strict: false => שדות נוספים יישמרו)
+// 6) הגדרת סכמות ו-Models (strict: false => שדות נוספים נשמרים)
 const { Schema, model } = mongoose
-
 const animeSchema = new Schema({}, { strict: false })
-
 const AnimeData = model('AnimeData', animeSchema, 'data') // data
-const NeedCheckData = model('NeedCheckData', animeSchema, 'needCheck') // needCheck
-const ApprovedData = model('ApprovedData', animeSchema, 'approved') // approved
+const NeedCheckData = model('NeedCheckData', animeSchema, 'needCheck')
+const ApprovedData = model('ApprovedData', animeSchema, 'approved')
 
 // 7) Admin credentials
 const ADMIN_USER = 'ad123admin'
 const ADMIN_PASS = 'ad123admin!'
 
-// 8) API Endpoints
+/**
+ * פונקציית עזר: לאחר שינוי (הסרה/הוספה) של רשומות ב-AnimeData,
+ * אפשר *לשדר* לצורך עדכון live. עם pagination, אפשר להחליט לשדר
+ * רק הודעה כללית ("animeDataChanged"), והלקוח יחליט אם לרענן Cache.
+ */
+function broadcastAnimeDataChanged() {
+  io.emit('animeDataChanged')
+}
 
 /**
- * (א) מחזיר את האנימות מקולקציית data
+ * (א) מחזיר את האנימות מקולקציית data עם Pagination
+ * GET /api/anime?page=1&limit=30
+ * מחזיר JSON:
+ * {
+ *   "docs": [...],
+ *   "totalCount": 26000,
+ *   "totalPages": 867,
+ *   "page": 1,
+ *   "limit": 30
+ * }
  */
 app.get('/api/anime', async (req, res) => {
   try {
-    const data = await AnimeData.find().lean()
-    // מוסיף lock info
-    const result = data.map((animeDoc) => {
-      const lock = locks.find((l) => l.anizone_id === animeDoc.anizone_id)
-      return lock
-        ? { ...animeDoc, locked: true, lockedBy: lock.lockedBy }
-        : { ...animeDoc, locked: false, lockedBy: null }
+    const page = parseInt(req.query.page, 10) || 1
+    const limit = parseInt(req.query.limit, 10) || 30
+
+    // חישוב skip
+    const skip = (page - 1) * limit
+
+    // מוצאים רק את האנימות בטווח המתאים
+    const docs = await AnimeData.find().skip(skip).limit(limit).lean()
+
+    // סופרים כמה אנימות יש בקולקציה
+    const totalCount = await AnimeData.countDocuments()
+    const totalPages = Math.ceil(totalCount / limit)
+
+    return res.json({
+      docs,
+      totalCount,
+      totalPages,
+      page,
+      limit,
     })
-    return res.json(result)
   } catch (err) {
     console.error('Error fetching anime from DB:', err.message)
     return res.status(500).json({ error: 'Internal Server Error' })
@@ -145,7 +173,7 @@ app.post('/api/pending-edits', async (req, res) => {
     // מוסיפים ל-needCheck
     await NeedCheckData.create(merged)
 
-    // שמירה ב-pendingEdits in-memory
+    // שומרים ב-pendingEdits in-memory
     pendingEdits.push({
       editId,
       anizone_id,
@@ -153,8 +181,11 @@ app.post('/api/pending-edits', async (req, res) => {
       createdAt: new Date().toISOString(),
       newData,
     })
-    io.emit('pendingEditsUpdated', pendingEdits)
 
+    // לאחר שהסרנו את האנימה מ-data, נרצה להודיע
+    broadcastAnimeDataChanged()
+
+    io.emit('pendingEditsUpdated', pendingEdits)
     return res.json({ editId })
   } catch (err) {
     console.error('Error in pending-edits:', err.message)
@@ -177,7 +208,6 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
     const { editId } = req.params
     const updatedByAdmin = req.body.newData || {}
 
-    // מחיקת _id אם הגיע
     if (updatedByAdmin._id) {
       delete updatedByAdmin._id
     }
@@ -212,14 +242,17 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
     // מוסיפים ל-approved
     await ApprovedData.create(finalData)
 
-    // הסרה מה-pendingEdits
+    // מסירים מ-pendingEdits
     pendingEdits.splice(idx, 1)
 
     // שחרור נעילה
     locks = locks.filter((l) => l.anizone_id !== animeId)
     io.emit('locksUpdated', locks)
-    io.emit('pendingEditsUpdated', pendingEdits)
 
+    // האנימה נעלמה מ-data, כי עברה ל-approved
+    broadcastAnimeDataChanged()
+
+    io.emit('pendingEditsUpdated', pendingEdits)
     return res.json({ success: true, updatedAnime: finalData })
   } catch (err) {
     console.error('Error in approve route:', err.message)
@@ -228,7 +261,7 @@ app.post('/api/pending-edits/:editId/approve', async (req, res) => {
 })
 
 /**
- * (ו) אדמין דוחה עריכה => מחזיר ל-data (אם רוצים)
+ * (ו) אדמין דוחה עריכה => מחזיר ל-data
  */
 app.post('/api/pending-edits/:editId/reject', async (req, res) => {
   try {
@@ -255,10 +288,12 @@ app.post('/api/pending-edits/:editId/reject', async (req, res) => {
     pendingEdits.splice(idx, 1)
 
     // שחרור נעילה
-    locks = locks.filter((l) => l.anizone_id !== animeId)
+    locks = locks.filter((l) => l.lockedBy !== pend.editedBy)
     io.emit('locksUpdated', locks)
-    io.emit('pendingEditsUpdated', pendingEdits)
 
+    broadcastAnimeDataChanged()
+
+    io.emit('pendingEditsUpdated', pendingEdits)
     return res.json({ success: true })
   } catch (err) {
     console.error('Error in reject route:', err.message)
@@ -339,7 +374,7 @@ app.get('/api/admin/stats', async (req, res) => {
     const totalPending = pendingEdits.length
     const totalData = dataCount
     const totalApproved = approvedCount
-    // אם תרצה להחשיב גם needCheck => let totalOverall = dataCount + needCount
+    // אפשר totalOverall = dataCount + needCount (אם תרצה להחשיב את needCheck)
     const totalOverall = dataCount
 
     return res.json({
