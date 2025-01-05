@@ -22,8 +22,8 @@ let locks = [] // [{ anizone_id, lockedBy, lockedAt }]
 let pendingEdits = [] // [{ editId, anizone_id, editedBy, newData }]
 
 // משתמש/סיסמה לאדמין (דוגמה)
-const ADMIN_USER = 'admin'
-const ADMIN_PASS = 'admin'
+const ADMIN_USER = 'ad123admin'
+const ADMIN_PASS = 'ad123admin!'
 
 // נתיבים לקבצי JSON
 const dataPath = path.join(__dirname, 'public', 'data.json')
