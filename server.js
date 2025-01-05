@@ -365,7 +365,6 @@ app.get('/api/admin/stats', async (req, res) => {
 /**
  * הגשת קבצי הלקוח (React build)
  */
-import { fileURLToPath } from 'url'
 app.use(express.static(path.join(__dirname, 'client/build')))
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
