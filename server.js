@@ -1,9 +1,13 @@
+/***********************************************
+ * server.js - using Mongoose instead of JSON
+ ***********************************************/
 import express from 'express'
 import path from 'path'
 import fs from 'fs'
 import { createServer } from 'http'
 import { Server } from 'socket.io'
 import { fileURLToPath } from 'url'
+import mongoose from 'mongoose'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -16,111 +20,91 @@ const io = new Server(httpServer, {
   cors: { origin: '*' },
 })
 
-// --------------------------------
-// 1) In-memory data
-// --------------------------------
-let locks = [] // [{ anizone_id, lockedBy, lockedAt }]
-let pendingEdits = [] // [{ editId, anizone_id, editedBy, newData }]
+// -----------------------------------------------------
+// 1) הגדרת משתנה סביבה למחרוזת חיבור
+// -----------------------------------------------------
+const MONGODB_URI =
+  process.env.MONGODB_URI || 'mongodb+srv://adminov:adminov@animeedit.domgo.mongodb.net/?retryWrites=true&w=majority&appName=animeedit'
 
-// --------------------------------
-// 2) Admin credentials
-// --------------------------------
+// -----------------------------------------------------
+// 2) חיבור ל-MongoDB
+// -----------------------------------------------------
+mongoose
+  .connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('Connected to MongoDB Atlas!')
+  })
+  .catch((err) => {
+    console.error('Error connecting to MongoDB Atlas:', err.message)
+  })
+
+// -----------------------------------------------------
+// 3) In-memory arrays (אם רוצים להשאיר)
+//    או אפשר להעביר גם אותם למסד (בעיקר locks & pendingEdits)
+// -----------------------------------------------------
+let locks = []
+let pendingEdits = []
+
+// -----------------------------------------------------
+// 4) הגדרת סכמות (Schemas) ו-Models
+// -----------------------------------------------------
+import mongoose from 'mongoose'
+const { Schema, model } = mongoose
+
+// סכמה בסיסית (animeSchema) - משתתפת בכל 3 הקולקשנים
+const animeSchema = new Schema(
+  {
+    anizone_id: Number,
+    title: String,
+    title_english: String,
+    title_hebrew: String,
+    synopsis: String,
+    synopsis_hebrew: String,
+    background: String,
+    background_hebrew: String,
+    // ועוד שדות שתרצה
+  },
+  { versionKey: false }
+)
+
+// בכל קולקציה נשתמש באותה סכמה, אבל Models שונים
+const AnimeData = model('AnimeData', animeSchema, 'data') // קולקציה data
+const NeedCheckData = model('NeedCheckData', animeSchema, 'needCheck') // קולקציה needCheck
+const ApprovedData = model('ApprovedData', animeSchema, 'approved') // קולקציה approved
+
+// -----------------------------------------------------
+// 5) Admin credentials
+// -----------------------------------------------------
 const ADMIN_USER = 'ad123admin'
 const ADMIN_PASS = 'ad123admin!'
 
-// --------------------------------
-// 3) JSON Paths
-// --------------------------------
-const dataPath = path.join(__dirname, 'public', 'data.json')
-const needCheckPath = path.join(__dirname, 'public', 'needCheckData.json')
-const approvedPath = path.join(__dirname, 'public', 'approvedData.json')
-
-// --------------------------------
-// 4) Ensure files exist
-//    (If a file doesn't exist, create an empty JSON array)
-// --------------------------------
-const defaultFiles = [dataPath, needCheckPath, approvedPath]
-defaultFiles.forEach((filePath) => {
-  if (!fs.existsSync(filePath)) {
-    console.warn(`Creating default file: ${filePath}`)
-    fs.writeFileSync(filePath, JSON.stringify([]))
-  }
-})
-
-// Debug logs
-console.log('==== JSON PATHS ====')
-console.log(`dataPath:       ${dataPath}`)
-console.log(`needCheckPath:  ${needCheckPath}`)
-console.log(`approvedPath:   ${approvedPath}`)
-console.log('====================')
-
-// --------------------------------
-// 5) Helper functions for load/save
-// --------------------------------
-function loadFile(filePath) {
-  try {
-    if (!fs.existsSync(filePath)) {
-      console.warn(`File not found: ${filePath}. Creating new empty file.`)
-      fs.writeFileSync(filePath, JSON.stringify([]))
-      return []
-    }
-    const raw = fs.readFileSync(filePath, 'utf-8')
-    return JSON.parse(raw)
-  } catch (err) {
-    console.error(`Error reading file at ${filePath}:`, err.message)
-    return []
-  }
-}
-
-function saveFile(filePath, data) {
-  try {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
-  } catch (err) {
-    console.error(`Error saving file at ${filePath}:`, err.message)
-  }
-}
-
-// **Load** wrappers
-function loadData() {
-  return loadFile(dataPath)
-}
-function loadNeedCheck() {
-  return loadFile(needCheckPath)
-}
-function loadApproved() {
-  return loadFile(approvedPath)
-}
-
-// **Save** wrappers
-function saveData(arr) {
-  saveFile(dataPath, arr)
-}
-function saveNeedCheck(arr) {
-  saveFile(needCheckPath, arr)
-}
-function saveApproved(arr) {
-  saveFile(approvedPath, arr)
-}
-
-// --------------------------------
+// -----------------------------------------------------
 // 6) API Endpoints
-// --------------------------------
+// -----------------------------------------------------
 
 /**
- * (א) מחזיר את האנימות שעדיין ב-data.json
- * (needCheckData.json לא מוצג למשתמש רגיל)
+ * (א) מחזיר את האנימות שעדיין בקולקציית `data`
  */
-app.get('/api/anime', (req, res) => {
-  const data = loadData()
-  // משדכים lock info
-  const result = data.map((anime) => {
-    const lock = locks.find((l) => l.anizone_id === anime.anizone_id)
-    if (lock) {
-      return { ...anime, locked: true, lockedBy: lock.lockedBy }
-    }
-    return { ...anime, locked: false, lockedBy: null }
-  })
-  res.json(result)
+app.get('/api/anime', async (req, res) => {
+  try {
+    // נטען את האנימות מ-DB
+    const data = await AnimeData.find().lean()
+    // מוסיפים lock info
+    const result = data.map((animeDoc) => {
+      const lock = locks.find((l) => l.anizone_id === animeDoc.anizone_id)
+      if (lock) {
+        return { ...animeDoc, locked: true, lockedBy: lock.lockedBy }
+      }
+      return { ...animeDoc, locked: false, lockedBy: null }
+    })
+    return res.json(result)
+  } catch (err) {
+    console.error('Error fetching anime from DB:', err.message)
+    return res.status(500).json({ error: 'Internal Server Error' })
+  }
 })
 
 /**
@@ -138,168 +122,179 @@ app.post('/api/lock/:animeId', (req, res) => {
       .json({ error: 'Anime is already locked by someone else' })
   }
 
-  // בדיקה אם למשתמש זה כבר יש נעילה
+  // בדיקה אם למשתמש כבר יש נעילה
   const existingByUser = locks.find((l) => l.lockedBy === user)
   if (existingByUser) {
-    return res
-      .status(409)
-      .json({ error: 'You already locked another anime. Please unlock first.' })
+    return res.status(409).json({
+      error: 'You already locked another anime. Please unlock first.',
+    })
   }
 
-  // מוסיפים לרשימת הנעילות
+  // מוסיפים
   locks.push({
     anizone_id: animeId,
     lockedBy: user,
     lockedAt: new Date().toISOString(),
   })
   io.emit('locksUpdated', locks)
-  res.sendStatus(200)
+  return res.sendStatus(200)
 })
 
 /**
- * (ג) משתמש שומר עריכה -> מוציאים את האנימה מ-data.json ומוסיפים ל-needCheckData.json
+ * (ג) משתמש שומר עריכה -> מוציאים את האנימה מ-collection data ומוסיפים ל-collection needCheck
  */
-app.post('/api/pending-edits', (req, res) => {
-  const { anizone_id, user, newData } = req.body
-  const editId = Date.now().toString()
+app.post('/api/pending-edits', async (req, res) => {
+  try {
+    const { anizone_id, user, newData } = req.body
+    const editId = Date.now().toString()
 
-  // 1) מוציאים מה-data.json
-  const dataArr = loadData()
-  const idx = dataArr.findIndex((a) => a.anizone_id === anizone_id)
-  if (idx === -1) {
-    return res.status(404).json({ error: 'Anime not found in data.json' })
+    // 1) מאתרים אנימה בקולקציית data
+    const animeDoc = await AnimeData.findOne({ anizone_id })
+    if (!animeDoc) {
+      return res
+        .status(404)
+        .json({ error: 'Anime not found in data collection' })
+    }
+
+    // 2) מסירים מקולקציית data
+    await AnimeData.deleteOne({ anizone_id })
+
+    // 3) ממזגים
+    const merged = {
+      ...animeDoc.toObject(),
+      ...newData,
+    }
+
+    // 4) מוסיפים לקולקציית needCheck
+    await NeedCheckData.create(merged)
+
+    // 5) מוסיפים ל-pendingEdits in-memory
+    pendingEdits.push({
+      editId,
+      anizone_id,
+      editedBy: user,
+      createdAt: new Date().toISOString(),
+      newData,
+    })
+    io.emit('pendingEditsUpdated', pendingEdits)
+
+    return res.json({ editId })
+  } catch (err) {
+    console.error('Error in pending-edits:', err.message)
+    return res.status(500).json({ error: 'Internal Server Error' })
   }
-
-  const animeObj = dataArr[idx]
-  dataArr.splice(idx, 1)
-  saveData(dataArr)
-
-  // 2) ממזגים newData
-  const merged = { ...animeObj, ...newData }
-
-  // 3) מוסיפים ל-needCheckData.json
-  const needCheckArr = loadNeedCheck()
-  needCheckArr.push(merged)
-  saveNeedCheck(needCheckArr)
-
-  // 4) שומרים ב-pendingEdits in-memory
-  pendingEdits.push({
-    editId,
-    anizone_id,
-    editedBy: user,
-    createdAt: new Date().toISOString(),
-    newData,
-  })
-  io.emit('pendingEditsUpdated', pendingEdits)
-
-  res.json({ editId })
 })
 
 /**
- * (ד) GET /api/pending-edits - אדמין רואה עריכות בהמתנה
+ * (ד) GET /api/pending-edits  - אדמין רואה עריכות בהמתנה
  */
 app.get('/api/pending-edits', (req, res) => {
-  res.json(pendingEdits)
+  return res.json(pendingEdits)
 })
 
 /**
- * (ה) אדמין מאשר עריכה -> מוציא מ-needCheckData.json ומוסיף ל-approvedData.json
+ * (ה) אדמין מאשר עריכה -> מוציא מ-needCheckData.json (עכשיו = קולקציית NeedCheck) -> לקולקציית Approved
  */
-app.post('/api/pending-edits/:editId/approve', (req, res) => {
-  const { editId } = req.params
-  const updatedByAdmin = req.body.newData || {}
+app.post('/api/pending-edits/:editId/approve', async (req, res) => {
+  try {
+    const { editId } = req.params
+    const updatedByAdmin = req.body.newData || {}
 
-  // 1) חיפוש ב-pendingEdits in-memory
-  const idx = pendingEdits.findIndex((p) => p.editId === editId)
-  if (idx === -1) {
-    return res.status(404).json({ error: 'Pending edit not found' })
+    // 1) איתור העריכה ב-pendingEdits
+    const idx = pendingEdits.findIndex((p) => p.editId === editId)
+    if (idx === -1) {
+      return res.status(404).json({ error: 'Pending edit not found' })
+    }
+
+    const pend = pendingEdits[idx]
+    const animeId = pend.anizone_id
+
+    // 2) איתור האנימה בקולקציית NeedCheck
+    const animeDoc = await NeedCheckData.findOne({ anizone_id: animeId })
+    if (!animeDoc) {
+      return res
+        .status(404)
+        .json({ error: 'Anime not found in needCheck collection' })
+    }
+
+    // 3) מחיקה מקולקציית needCheck
+    await NeedCheckData.deleteOne({ anizone_id: animeId })
+
+    // 4) ממזגים
+    const finalData = {
+      ...animeDoc.toObject(),
+      ...pend.newData,
+      ...updatedByAdmin,
+    }
+
+    // 5) מוסיפים ל-Approved
+    await ApprovedData.create(finalData)
+
+    // 6) מסירים מ-pendingEdits
+    pendingEdits.splice(idx, 1)
+
+    // 7) משחררים נעילה
+    locks = locks.filter((l) => l.anizone_id !== animeId)
+    io.emit('locksUpdated', locks)
+    io.emit('pendingEditsUpdated', pendingEdits)
+
+    return res.json({ success: true, updatedAnime: finalData })
+  } catch (err) {
+    console.error('Error in approve route:', err.message)
+    return res.status(500).json({ error: 'Internal Server Error' })
   }
-
-  const pend = pendingEdits[idx]
-  const animeId = pend.anizone_id
-
-  // 2) מוצאים את האנימה ב-needCheckData.json
-  const needArr = loadNeedCheck()
-  const needIdx = needArr.findIndex((a) => a.anizone_id === animeId)
-  if (needIdx === -1) {
-    return res
-      .status(404)
-      .json({ error: 'Anime not found in needCheckData.json' })
-  }
-
-  const animeObj = needArr[needIdx]
-  // ממזגים
-  const finalData = { ...animeObj, ...pend.newData, ...updatedByAdmin }
-
-  // 3) מסירים מ-needCheck
-  needArr.splice(needIdx, 1)
-  saveNeedCheck(needArr)
-
-  // 4) מוסיפים ל-approvedData.json
-  const approvedArr = loadApproved()
-  approvedArr.push(finalData)
-  saveApproved(approvedArr)
-
-  // 5) מסירים מה-pendingEdits in-memory
-  pendingEdits.splice(idx, 1)
-
-  // 6) משחררים נעילה
-  locks = locks.filter((l) => l.anizone_id !== animeId)
-  io.emit('locksUpdated', locks)
-  io.emit('pendingEditsUpdated', pendingEdits)
-
-  res.json({ success: true, updatedAnime: finalData })
 })
 
 /**
- * (ו) אדמין דוחה עריכה -> מסיר מ-needCheckData.json ומחזיר ל-data.json אם רוצים
+ * (ו) אדמין דוחה עריכה -> מחזיר האנימה ל-data או פשוט מסיר
  */
-app.post('/api/pending-edits/:editId/reject', (req, res) => {
-  const { editId } = req.params
+app.post('/api/pending-edits/:editId/reject', async (req, res) => {
+  try {
+    const { editId } = req.params
 
-  const idx = pendingEdits.findIndex((p) => p.editId === editId)
-  if (idx === -1) {
-    return res.status(404).json({ error: 'Pending edit not found' })
+    // 1) איתור העריכה ב-in-memory
+    const idx = pendingEdits.findIndex((p) => p.editId === editId)
+    if (idx === -1) {
+      return res.status(404).json({ error: 'Pending edit not found' })
+    }
+
+    const pend = pendingEdits[idx]
+    const animeId = pend.anizone_id
+
+    // 2) מחפשים את האנימה בקולקציית needCheck
+    const animeDoc = await NeedCheckData.findOne({ anizone_id: animeId })
+    if (animeDoc) {
+      // מוחקים מ-needCheck
+      await NeedCheckData.deleteOne({ anizone_id: animeId })
+
+      // אם רוצים להחזיר ל-data
+      await AnimeData.create(animeDoc.toObject())
+    }
+
+    // 3) מסירים מ-pendingEdits
+    pendingEdits.splice(idx, 1)
+
+    // 4) משחררים נעילה
+    locks = locks.filter((l) => l.anizone_id !== animeId)
+    io.emit('locksUpdated', locks)
+    io.emit('pendingEditsUpdated', pendingEdits)
+
+    return res.json({ success: true })
+  } catch (err) {
+    console.error('Error in reject route:', err.message)
+    return res.status(500).json({ error: 'Internal Server Error' })
   }
-
-  const pend = pendingEdits[idx]
-  const animeId = pend.anizone_id
-
-  // מוצאים את האנימה ב-needCheckData.json
-  const needArr = loadNeedCheck()
-  const needIdx = needArr.findIndex((a) => a.anizone_id === animeId)
-  if (needIdx !== -1) {
-    const animeObj = needArr[needIdx]
-    // מסירים
-    needArr.splice(needIdx, 1)
-    saveNeedCheck(needArr)
-
-    // מחזירים ל-data.json אם רוצים
-    const dataArr = loadData()
-    dataArr.push(animeObj)
-    saveData(dataArr)
-  }
-
-  // מסירים מ-pendingEdits
-  pendingEdits.splice(idx, 1)
-
-  // משחררים נעילה
-  locks = locks.filter((l) => l.anizone_id !== animeId)
-  io.emit('locksUpdated', locks)
-  io.emit('pendingEditsUpdated', pendingEdits)
-
-  res.json({ success: true })
 })
 
 /**
- * (ז) נקודת קצה להחזרת רשימת הנעילות (admin)
+ * (ז) נקודת קצה להחזרת רשימת הנעילות
  */
 app.get('/api/admin/locks', (req, res) => {
   const { authorization } = req.headers
   if (authorization !== 'Bearer dummy-admin-token') {
     return res.status(403).json({ error: 'Not authorized' })
   }
-  res.json(locks)
+  return res.json(locks)
 })
 
 /**
@@ -313,7 +308,7 @@ app.post('/api/admin/unlock/:animeId', (req, res) => {
   const animeId = +req.params.animeId
   locks = locks.filter((l) => l.anizone_id !== animeId)
   io.emit('locksUpdated', locks)
-  res.json({ success: true })
+  return res.json({ success: true })
 })
 
 /**
@@ -323,7 +318,7 @@ app.post('/api/unlock/:animeId', (req, res) => {
   const animeId = +req.params.animeId
   locks = locks.filter((l) => l.anizone_id !== animeId)
   io.emit('locksUpdated', locks)
-  res.sendStatus(200)
+  return res.sendStatus(200)
 })
 
 /**
@@ -345,33 +340,40 @@ app.get('/api/admin/pending-edits', (req, res) => {
   if (authorization !== 'Bearer dummy-admin-token') {
     return res.status(403).json({ error: 'Not authorized' })
   }
-  res.json(pendingEdits)
+  return res.json(pendingEdits)
 })
 
 /**
- * סטטיסטיקות
+ * סטטיסטיקות - סופרות רשומות ב-DB
  */
-app.get('/api/admin/stats', (req, res) => {
+app.get('/api/admin/stats', async (req, res) => {
   const { authorization } = req.headers
   if (authorization !== 'Bearer dummy-admin-token') {
     return res.status(403).json({ error: 'Not authorized' })
   }
+  try {
+    const dataCount = await AnimeData.countDocuments()
+    const needCount = await NeedCheckData.countDocuments()
+    const approvedCount = await ApprovedData.countDocuments()
 
-  const dataArr = loadData()
-  const needArr = loadNeedCheck()
-  const approvedArr = loadApproved()
+    // כאן pendingEdits זה in-memory
+    const totalPending = pendingEdits.length
 
-  const totalPending = pendingEdits.length
-  const totalData = dataArr.length
-  const totalApproved = approvedArr.length
-  const totalOverall = totalData
+    // החלטנו ש"totalOverall" זה מספר האנימות ב-data
+    const totalData = dataCount
+    const totalApproved = approvedCount
+    const totalOverall = dataCount // או dataCount + needCount ?
 
-  res.json({
-    totalData,
-    totalApproved,
-    totalPending,
-    totalOverall,
-  })
+    return res.json({
+      totalData,
+      totalApproved,
+      totalPending,
+      totalOverall,
+    })
+  } catch (err) {
+    console.error('Error in stats route:', err.message)
+    return res.status(500).json({ error: 'Internal Server Error' })
+  }
 })
 
 /**
@@ -391,7 +393,7 @@ io.on('connection', (socket) => {
 
   socket.on('disconnect', () => {
     console.log('A user disconnected:', socket.id, '-> userId:', userId)
-    // אם תרצה: הסרת נעילות של אותו userId
+    // אופציונלי: הסרה מ locks
     locks = locks.filter((l) => l.lockedBy !== userId)
     io.emit('locksUpdated', locks)
   })
