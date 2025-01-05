@@ -26,8 +26,8 @@ const ADMIN_USER = 'admin'
 const ADMIN_PASS = 'admin'
 
 // 3) נתיבים לקבצי JSON
-const dataPath = path.join(__dirname, 'data', 'data.json')
-const approvedPath = path.join(__dirname, 'data', 'approvedData.json')
+const dataPath = path.join(process.cwd(), 'public', 'data.json')
+const approvedPath = path.join(process.cwd(), 'public', 'approvedData.json')
 
 function loadAnimeData() {
   const raw = fs.readFileSync(dataPath, 'utf-8')
