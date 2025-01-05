@@ -1,0 +1,185 @@
+[
+  {
+    "anizone_id": 1,
+    "mal_id": 1,
+    "url": "https://myanimelist.net/anime/1/Cowboy_Bebop",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/4/19644.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\1_Cowboy_Bebop\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/1_Cowboy_Bebop/hutnuxs0zje4ckgfa2uk.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/4/19644l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\1_Cowboy_Bebop\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/1_Cowboy_Bebop/xv6hvqpap78cldnzjlda.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=gY5nDXOtv_o",
+      "embed_url": "https://www.youtube.com/embed/gY5nDXOtv_o?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {
+        "large_image_url": "https://img.youtube.com/vi/gY5nDXOtv_o/hqdefault.jpg"
+      }
+    },
+    "approved": true,
+    "title": "Cowboy Bebop",
+    "title_english": "Cowboy Bebop",
+    "title_hebrew": "קאובוי ביבופccs",
+    "title_japanese": "カウボーイビバップ",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Original",
+    "episodes": 26,
+    "status": "הסתיים",
+    "aired": {
+      "from": "1998-04-03T00:00:00+00:00",
+      "to": "1999-04-24T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 3,
+          "month": 4,
+          "year": 1998
+        },
+        "to": {
+          "day": 24,
+          "month": 4,
+          "year": 1999
+        }
+      },
+      "string": "03/04/1998 עד 24/04/1999"
+    },
+    "duration": "24 דקות",
+    "rating": "18+",
+    "score": 8.75,
+    "scored_by": 995330,
+    "rank": 46,
+    "popularity": 43,
+    "members": 1927138,
+    "favorites": 84702,
+    "synopsis": "Crime is timeless. By the year 2071, humanity has expanded across the galaxy, filling the surface of other planets with settlements like those on Earth. These new societies are plagued by murder, drug use, and theft, and intergalactic outlaws are hunted by a growing number of tough bounty hunters.\n\nSpike Spiegel and Jet Black pursue criminals throughout space to make a humble living. Beneath his goofy and aloof demeanor, Spike is haunted by the weight of his violent past. Meanwhile, Jet manages his own troubled memories while taking care of Spike and the Bebop, their ship. The duo is joined by the beautiful con artist Faye Valentine, odd child Edward Wong Hau Pepelu Tivrusky IV, and Ein, a bioengineered Welsh Corgi.\n\nWhile developing bonds and working to catch a colorful cast of criminals, the Bebop crew's lives are disrupted by a menace from Spike's past. As a rival's maniacal plot continues to unravel, Spike must choose between life with his newfound family or revenge for his old wounds.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "השנה היא 2071. זוג השותפים ספייק שפיגל וג'ק בלאק משוטטים יחדיו ברחבי מערכת השמש בספינת חלל ישנה ושמה \"ביבופ\" (Bebop). השניים מתפרנסים מציד ראשים של פושעים בין גלקטיים.\n\nהסדרה אט אט חושפת עוד דמויות ואת עברן הכואב וגדוש הטרגדיות.",
+    "background": "When Cowboy Bebop first aired in spring of 1998 on TV Tokyo, only episodes 2, 3, 7-15, and 18 were broadcast, it was concluded with a recap special known as Yose Atsume Blues. This was due to anime censorship having increased following the big controversies over Evangelion, as a result most of the series was pulled from the air due to violent content. Satellite channel WOWOW picked up the series in the fall of that year and aired it in its entirety uncensored. Cowboy Bebop was not a ratings hit in Japan, but sold over 19,000 DVD units in the initial release run, and 81,000 overall. Protagonist Spike Spiegel won Best Male Character, and Megumi Hayashibara won Best Voice Actor for her role as Faye Valentine in the 1999 and 2000 Anime Grand Prix, respectively. Cowboy Bebop's biggest influence has been in the United States, where it premiered on Adult Swim in 2001 with many reruns since. The show's heavy Western influence struck a chord with American viewers, where it became a \"gateway drug\" to anime aimed at adult audiences.",
+    "background_hebrew": "כאשר קאובוי ביבופ שודר לראשונה באביב 1998 על TV Tokyo, רק הפרקים 2, 3, 7-15, ו-18 הוקרנו, והוא הסתיים עם סיכום מיוחד הידוע בשם Yose Atsume Blues. זה קרה בעקבות הגברת הצנזורה על אנימה לאחר מחלוקות גדולות סביב אוונגליון, ולכן רוב הסדרה הוסרה מהשידור בשל תכנים אלימים. ערוץ הלוויין WOWOW לקח את הסדרה בסתיו של אותה שנה ושידר אותה במלואה ללא צנזורה. קאובוי ביבופ לא היה להיט ברייטינג ביפן, אבל מכר מעל 19,000 יחידות DVD בהפצה הראשונית, ובסך הכל 81,000. הדמות הראשית ספייק ספיגל זכתה בתואר הדמות הזכרית הטובה ביותר, ומגומי היאשיברה זכתה בפרס הקול הטוב ביותר על תפקידה בתור פיי ולנטיין ב-Anime Grand Prix של 1999 ו-2000 בהתאמה. ההשפעה הגדולה ביותר של קאובוי ביבופ הייתה בארצות הברית, שם הוקרן לראשונה ב-Adult Swim ב-2001 עם שידורים חוזרים רבים לאחר מכן. ההשפעה המערבית הכבדה של התוכנית נגעה בצלילים של הצופים האמריקאים, שם היא הפכה ל\"סם שער\" לאנימה שמיועדת לקהל מבוגר.\n\nההפצה היפנית על ידי Victor Entertainment כוללת פתיחות שונות המתייחסות לפרק הספציפי בו הן מנוגנות. ההפצות הראשוניות של Geneon Entertainment USA (שהייתה ידועה אז בתור Pioneer) על קלטות VHS ו-DVD (סינגלים, Signature Series וקופסאות) השתמשו רק בפתיחה הראשונה בכל פרק. זה קרה כיוון שבעל הרישיון היפני סיפק להם חומרים נקיים רק לפתיחה הראשונה כדי לשים עליהם את הקרדיטים באנגלית. Geneon תיקנה מאוחר יותר את הטעות הזו בהפצות קונסולת הפח המוגבלות ב-2005/2006, כמו גם על סינגלי ה-Remix. לאחר קריסת Geneon USA בסוף 2007, התוכנית יצאה מהדפסה. כש-FUNimation Entertainment לקחה את התוכנית ב-2010 והפיצה אותה, הם חזרו על הטעות של Geneon בשימוש בפתיחה הראשונה בלבד בכל פרק. טעות זו תוקנה מאוחר יותר ב-2013 בהפצה מחדש על Anime Classics.\n\nEyeshield 21 היה מתוכנן במקור לשדר בצפון אמריקה על Toonami Jetstream ו-NFL Rush בשיתוף פעולה עם ליגת הפוטבול הלאומית, אך התוכנית נכשלה והאנימה עשתה את הבכורה שלה רק על Toonami Jetstream, אשר לאחר מכן ביוטרדה את הסדרה. לאחר מכן היא הפכה לזמינה במלואה ב-Crunchyroll. מאוחר יותר Sentai Filmworks ריכזו והפיצו את 52 הפרקים הראשונים על DVD בין השנים 2010 ל-2011.\n\nHachimitsu to Clover הייתה האנימה הראשונה ששודרה על Fuji Television's noitaminA block.\n\nHungry Heart: Wild Striker שוחררה על DVD על ידי Pony Canyon ביפן מה-19 בפברואר 2003 עד ה-17 במרץ 2004.\n\nנארוטו מעבד את 27 הכרכים הראשונים של המנגה המקורית. היא קיבלה מספר פרסים במהלך השידור שלה, כולל \"פרס תוכנית האנימציה המלאה הטובה ביותר\" בפרסי UStv השלישיים ו\"התוכנית המונפשת הטובה ביותר\" ה-38 ב-Top 100 Animated Series של IGN.",
+    "season": "אביב",
+    "year": 1998,
+    "broadcast": {
+      "day": "שבת",
+      "time": "11:00",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי שבת ב-11:00 (שעון ישראל)"
+    },
+    "producers": [
+      "Bandai Visual",
+      "Victor Entertainment",
+      "Audio Planning U"
+    ],
+    "licensors": [
+      "Funimation"
+    ],
+    "studios": [
+      "Sunrise"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Award Winning / זוכה פרס",
+      "Sci-Fi / מדע בדיוני"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר",
+      "Space / חלל"
+    ],
+    "demographics": []
+  },
+  {
+    "anizone_id": 5,
+    "mal_id": 5,
+    "url": "https://myanimelist.net/anime/5/Cowboy_Bebop__Tengoku_no_Tobira",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1439/93480.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\5_Cowboy_Bebop__The_Movie\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078991/AnimeImages/5_Cowboy_Bebop__The_Movie/smim9zgp6mqj24ktvlam.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1439/93480l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\5_Cowboy_Bebop__The_Movie\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/5_Cowboy_Bebop__The_Movie/sycfsdemb309o34jdiqb.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Cowboy Bebop: Tengoku no Tobira",
+    "title_english": "Cowboy Bebop: The Movie",
+    "title_hebrew": "קאובוי ביבופ: דופק על דלת",
+    "title_japanese": "カウボーイビバップ 天国の扉",
+    "title_synonyms": [
+      "Cowboy Bebop: Knockin' on Heaven's Door"
+    ],
+    "type": "Movie",
+    "source": "Original",
+    "episodes": 1,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2001-09-01T00:00:00+00:00",
+      "to": null,
+      "prop": {
+        "from": {
+          "day": 1,
+          "month": 9,
+          "year": 2001
+        },
+        "to": {
+          "day": null,
+          "month": null,
+          "year": null
+        }
+      },
+      "string": "01/09/2001"
+    },
+    "duration": "155 דקות",
+    "rating": "18+",
+    "score": 8.38,
+    "scored_by": 221045,
+    "rank": 209,
+    "popularity": 634,
+    "members": 389545,
+    "favorites": 1655,
+    "synopsis": "Another day, another bounty—such is the life of the often unlucky crew of the Bebop. However, this routine is interrupted when Faye, who is chasing a fairly worthless target on Mars, witnesses an oil tanker suddenly explode, causing mass hysteria. As casualties mount due to a strange disease spreading through the smoke from the blast, a whopping three hundred million woolong price is placed on the head of the supposed perpetrator.\n\nWith lives at stake and a solution to their money problems in sight, the Bebop crew springs into action. Spike, Jet, Faye, and Edward, followed closely by Ein, split up to pursue different leads across Alba City. Through their individual investigations, they discover a cover-up scheme involving a pharmaceutical company, revealing a plot that reaches much further than the ragtag team of bounty hunters could have realized.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "ספייק שפיגל וחבורתו יוצאים למסע צייד של פושע מסוכן ומבוקש במיוחד. תוך כדי, הם נקלעים לסיפור שחיתות ממשלתית קלאסי שבראשו עומד אדם מסוכן.\n",
+    "background": "",
+    "background_hebrew": "",
+    "season": null,
+    "year": null,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": "Asia/Jerusalem",
+      "string": null
+    },
+    "producers": [
+      "Sunrise",
+      "Bandai Visual"
+    ],
+    "licensors": [
+      "Sony Pictures Entertainment",
+      "Funimation"
+    ],
+    "studios": [
+      "Bones"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Sci-Fi / מדע בדיוני"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר",
+      "Space / חלל"
+    ],
+    "demographics": []
+  }
+]

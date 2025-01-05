@@ -1,0 +1,826 @@
+[
+  {
+    "anizone_id": 6,
+    "mal_id": 6,
+    "url": "https://myanimelist.net/anime/6/Trigun",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/opb2zy7eu7tdqpr3wtbj.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1130/120002l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\6_Trigun\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/6_Trigun/cba0lmzi1jmmm7umebys.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=bJVyIXeUznY",
+      "embed_url": "https://www.youtube.com/embed/bJVyIXeUznY?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {}
+    },
+    "approved": true,
+    "title": "Trigun",
+    "title_english": "Trigun",
+    "title_hebrew": "טריגאן",
+    "title_japanese": "トライガン",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 26,
+    "status": "הסתיים",
+    "aired": {
+      "from": "1998-04-01T00:00:00+00:00",
+      "to": "1998-09-30T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 1,
+          "month": 4,
+          "year": 1998
+        },
+        "to": {
+          "day": 30,
+          "month": 9,
+          "year": 1998
+        }
+      },
+      "string": "01/04/1998 עד 30/09/1998"
+    },
+    "duration": "24 דקות",
+    "rating": "13+",
+    "score": 8.22,
+    "scored_by": 382146,
+    "rank": 364,
+    "popularity": 259,
+    "members": 786281,
+    "favorites": 16459,
+    "synopsis": "Vash the Stampede is the man with a $$60,000,000,000 bounty on his head. The reason: he's a merciless villain who lays waste to all those that oppose him and flattens entire cities for fun, garnering him the title \"The Humanoid Typhoon.\" He leaves a trail of death and destruction wherever he goes, and anyone can count themselves dead if they so much as make eye contact—or so the rumors say. In actuality, Vash is a huge softie who claims to have never taken a life and avoids violence at all costs.\n\nWith his crazy doughnut obsession and buffoonish attitude in tow, Vash traverses the wasteland of the planet Gunsmoke, all the while followed by two insurance agents, Meryl Stryfe and Milly Thompson, who attempt to minimize his impact on the public. But soon, their misadventures evolve into life-or-death situations as a group of legendary assassins are summoned to bring about suffering to the trio. Vash's agonizing past will be unraveled and his morality and principles pushed to the breaking point.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "סיפור הסדרה מתרחש בכוכב אחר שמזכיר את המערב הפרוע. בכוכב הזה עומד איש אחד במרכז העניינים. האיש הזה, \"וואש\", שראשו שווה 60,000,000,000 דולר בעוון סיפורים בדויים שעוברים מפה לאוזן באיזור, עובר הרפתקאות מוזרות ומסעירות במהלך הסדרה.\nוואש הוא אקדחן מצוין ותמים שנאלץ להתחמק מעשרות ציידי ראשים שרוצים את הפרס העצום שמונח על ראשו. במהלך פגישה לא נעימה עם מספר ציידי ראשים, הוא מכיר לראשונה את מריל סטרייף ומילי טומפסון, שתי סוכנות ביטוח קשוחות היודעות להשתמש באקדח, שמחפשות אחר ואש הידוע. לאחר שדרכם של ואש וסוכנות הביטוח (כשאין להן אפילו שמץ של מושג שהאיש המוזר שהן הרגע פגשו הוא ואש שהן מחפשות) נפרדות, הם ממשיכים להיפגש שוב ושוב במצבים שונים ומשונים, ורק לאחר זמן רב של חיפושים הן מבינות שבעצם הוא האיש שאחריו הן מחפשות.\nבמהלך הסדרה, וואש עובר חוויות מוזרות, מצחיקות ומסעירות, שמהן הוא תמיד מצליח להתחמק בעזרת כישורי האקדח שלו, אבל בעיקר בזכות המון מזל.",
+    "background": "The Japanese release by Victor Entertainment has different openings relating to the specific episode it's played on. The initial Geneon Entertainment USA (then known as Pioneer) releases on VHS and DVD (singles, Signature Series, and box set) used only the first opening on each episode. This was due to the Japanese licensor providing them clean materials for only the first opening to put the English credits on. Geneon later fixed this mistake on their Limited Edition tin releases in 2005/2006, as well as on the Remix singles. Following Geneon USA's demise in late 2007, the show went out of print. When FUNimation Entertainment picked up the show in 2010 and released it, they repeated Geneon's mistake of using only the first opening on every episode. This mistake was later fixed in 2013 on the Anime Classics re-release.",
+    "background_hebrew": null,
+    "season": "אביב",
+    "year": 1998,
+    "broadcast": {
+      "day": "חמישי",
+      "time": "11:15",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי חמישי ב-11:15 (שעון ישראל)"
+    },
+    "producers": [
+      "Victor Entertainment"
+    ],
+    "licensors": [
+      "Funimation"
+    ],
+    "studios": [
+      "Madhouse"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Adventure / הרפתקאות",
+      "Sci-Fi / מדע בדיוני"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר"
+    ],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 7,
+    "mal_id": 7,
+    "url": "https://myanimelist.net/anime/7/Witch_Hunter_Robin",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/7_Witch_Hunter_Robin/phhnxz93wmvgyjjkmyot.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/19969l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\7_Witch_Hunter_Robin\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/7_Witch_Hunter_Robin/zecgs06qcoczbqlmjfbp.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=7UkaILjPk8M",
+      "embed_url": "https://www.youtube.com/embed/7UkaILjPk8M?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {}
+    },
+    "approved": true,
+    "title": "Witch Hunter Robin",
+    "title_english": "Witch Hunter Robin",
+    "title_hebrew": "ציידת המכשפות רובין",
+    "title_japanese": "Witch Hunter ROBIN (ウイッチハンターロビン)",
+    "title_synonyms": [
+      "WHR"
+    ],
+    "type": "TV",
+    "source": "Original",
+    "episodes": 26,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2002-07-03T00:00:00+00:00",
+      "to": "2002-12-25T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 3,
+          "month": 7,
+          "year": 2002
+        },
+        "to": {
+          "day": 25,
+          "month": 12,
+          "year": 2002
+        }
+      },
+      "string": "03/07/2002 עד 25/12/2002"
+    },
+    "duration": "25 דקות",
+    "rating": "13+",
+    "score": 7.24,
+    "scored_by": 44782,
+    "rank": 3120,
+    "popularity": 1911,
+    "members": 120479,
+    "favorites": 656,
+    "synopsis": "Though hidden away from the general public, Witches—those with supernatural powers—have always existed in human societies. Neither numerous nor inherently evil, Witches are nonetheless capable of creating disorder by misusing their powers for criminal means. The task of solving supernatural crimes falls outside of the jurisdiction of normal authorities and is instead handled by the Solomon organization.\n\nHaving finished her training in Italy, Robin Sena transfers to Solomon's local Japanese branch, STNJ. Possessing powerful pyrokinetic abilities, she is herself a Witch, putting her at odds with STNJ's methods of dealing with rogue Witches. In particular, Robin opposes the use of an elixir called Orbo, which can weaken or even neutralize a Witch's powers. If Robin wants to find her place within the organization, she must find a way to navigate the internal politics of Solomon while also handling the threat of hostile Witches—but both seem to be dangerous for very different reasons.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "למרות שהן מוסתרות מעיני הציבור הרחב, מכשפות – אלה עם כוחות על-טבעיים – תמיד היו קיימות בחברות אנושיות. הן לא רבות ולא רשעיות מטבען, אבל מכשפות יכולות לגרום לכאוס כאשר הן מנצלות את כוחותיהן למטרות פשע. המשימה לפתור פשעים על-טבעיים חורגת מסמכות הרשויות הרגילות, והיא במקום זאת מטופלת על ידי הארגון \"סולומון\".\n\nלאחר שסיימה את הכשרתה באיטליה, רובין סנה מצטרפת לסניף המקומי של \"סולומון\" ביפן, ה-STNJ. עם יכולות פירוקינטיות עוצמתיות, היא בעצמה מכשפה, מה שמסבך אותה עם הדרכים של STNJ להתמודד עם מכשפות מורדות. במיוחד, רובין מתנגדת לשימוש באליקסיר בשם אורבו, שיכול להחליש או אפילו לנטרל את כוחותיה של מכשפה. אם רובין רוצה למצוא את מקומה בארגון, היא חייבת לנווט בפוליטיקה הפנימית של \"סולומון\" תוך התמודדות עם האיום של מכשפות עוינות – אבל נראה ששני הדברים האלה מסוכנים מסיבות שונות מאוד.\n\n(מקור: MAL Rewrite)",
+    "background": "",
+    "background_hebrew": null,
+    "season": "קיץ",
+    "year": 2002,
+    "broadcast": {
+      "day": "רביעי",
+      "time": "11:25",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי רביעי ב-11:25 (שעון ישראל)"
+    },
+    "producers": [
+      "Bandai Visual",
+      "Dentsu",
+      "Victor Entertainment"
+    ],
+    "licensors": [
+      "Funimation",
+      "Bandai Entertainment"
+    ],
+    "studios": [
+      "Sunrise"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Drama / דרמה",
+      "Mystery / מסתורין",
+      "Supernatural / על טבעי"
+    ],
+    "themes": [
+      "Detective / בלשות"
+    ],
+    "demographics": []
+  },
+  {
+    "anizone_id": 8,
+    "mal_id": 8,
+    "url": "https://myanimelist.net/anime/8/Bouken_Ou_Beet",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/7/21569.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\8_Beet_the_Vandel_Buster\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/8_Beet_the_Vandel_Buster/qdfecz6g2byaab4jblpn.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/7/21569l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\8_Beet_the_Vandel_Buster\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/8_Beet_the_Vandel_Buster/hvuvzlanr5sm4defhkak.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Bouken Ou Beet",
+    "title_english": "Beet the Vandel Buster",
+    "title_hebrew": "ביט הכובש את הוונדל",
+    "title_japanese": "冒険王ビィト",
+    "title_synonyms": [
+      "Adventure King Beet"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 52,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2004-09-30T00:00:00+00:00",
+      "to": "2005-09-29T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 30,
+          "month": 9,
+          "year": 2004
+        },
+        "to": {
+          "day": 29,
+          "month": 9,
+          "year": 2005
+        }
+      },
+      "string": "30/09/2004 עד 29/09/2005"
+    },
+    "duration": "23 דקות",
+    "rating": "לכולם",
+    "score": 6.93,
+    "scored_by": 6904,
+    "rank": 4626,
+    "popularity": 5509,
+    "members": 16054,
+    "favorites": 16,
+    "synopsis": "It is the dark century and the people are suffering under the rule of the devil, Vandel, who is able to manipulate monsters. The Vandel Busters are a group of people who hunt these devils, and among them, the Zenon Squad is known to be the strongest busters on the continent. A young boy, Beet, dreams of joining the Zenon Squad. However, one day, as a result of Beet's fault, the Zenon squad was defeated by the devil, Beltose. The five dying busters sacrificed their life power into their five weapons, Saiga. After giving their weapons to Beet, they passed away. Years have passed since then and the young Vandel Buster, Beet, begins his adventure to carry out the Zenon Squad's will to put an end to the dark century.",
+    "synopsis_hebrew": "זהו המאה האפלה והאנשים סובלים תחת שלטון השטן, ונדל, שיכול לתמרן מפלצות. הוונדל באסטרס הם קבוצה של אנשים שצדים את השדים הללו, וביניהם, קבוצת זנון ידועה כבוסטרים החזקים ביותר ביבשת. נער צעיר בשם ביט חולם להצטרף לקבוצת זנון. עם זאת, יום אחד, כתוצאה מאשמתו של ביט, קבוצת זנון הותקפה על ידי השטן, בלטוז. חמשת הבוסטרים הגוססים הקריבו את כוח חייהם אל תוך חמשת הנשקים שלהם, סייגה. אחרי שמסרו את נשקיהם לביט, הם מתו. שנים חלפו מאז, והבוסטר הצעיר, ביט, מתחיל את הרפתקאתו למלא את רצונה של קבוצת זנון לשים קץ למאה האפלה.",
+    "background": "",
+    "background_hebrew": null,
+    "season": "סתיו",
+    "year": 2004,
+    "broadcast": {
+      "day": "חמישי",
+      "time": "04:30",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי חמישי ב-04:30 (שעון ישראל)"
+    },
+    "producers": [
+      "TV Tokyo",
+      "Dentsu"
+    ],
+    "licensors": [
+      "Illumitoon Entertainment"
+    ],
+    "studios": [
+      "Toei Animation"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Adventure / הרפתקאות",
+      "Fantasy / פנטזיה"
+    ],
+    "themes": [],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 15,
+    "mal_id": 15,
+    "url": "https://myanimelist.net/anime/15/Eyeshield_21",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1079/133529.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\15_Eyeshield_21\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/15_Eyeshield_21/mqhgrnwn1qjo0mxbhukj.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1079/133529l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\15_Eyeshield_21\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/15_Eyeshield_21/u5gvi2xkdlibqsk2twmr.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Eyeshield 21",
+    "title_english": null,
+    "title_hebrew": "איישילד 21",
+    "title_japanese": "アイシールド21",
+    "title_synonyms": [
+      "Eyeshield21"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 145,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2005-04-06T00:00:00+00:00",
+      "to": "2008-03-19T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 6,
+          "month": 4,
+          "year": 2005
+        },
+        "to": {
+          "day": 19,
+          "month": 3,
+          "year": 2008
+        }
+      },
+      "string": "06/04/2005 עד 19/03/2008"
+    },
+    "duration": "23 דקות",
+    "rating": "13+",
+    "score": 7.91,
+    "scored_by": 90727,
+    "rank": 789,
+    "popularity": 1338,
+    "members": 187934,
+    "favorites": 2048,
+    "synopsis": "Shy, reserved, and small-statured, Deimon High School student Sena Kobayakawa is the perfect target for bullies. However, as a result of running errands throughout his life, Sena has become agile and developed a skill for avoiding crowds of people. After the cunning Youichi Hiruma—captain of the Deimon Devil Bats football team—witnesses Sena's rapid legs in motion, he coerces the timid boy into joining his squad.\n\nAs Hiruma wants to conceal Sena's identity from other clubs, Sena is forced to hide under the visored helmet of \"Eyeshield 21,\" a mysterious running back wearing the number 21 jersey. The legendary Eyeshield 21 can supposedly run at the speed of light and has achieved remarkable feats in the United States during his time at the Notre Dame College.\n\nAccustomed to avoiding his problems in the past, Sena's specialty might just help him become the new secret weapon of the Deimon Devil Bats. As he interacts with his teammates, Sena gradually gains more self-confidence and forges valuable bonds along the way.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "סנה קובאקאוה, תלמיד תיכון דיימון, ביישן, מופנם ובעל מבנה גוף קטן, הוא מטרה מושלמת להצקות בריונים. עם זאת, כתוצאה מביצוע סידורים לאורך חייו, סנה פיתח את היכולת להתחמק ממערכות. לאחר שהונצ'י הירומה, הקפטן הערמומי של קבוצת הפוטבול Deimon Devil Bats, צפה בכך שסנה רץ במהירות, הוא מכריח את הבחור הביישן להצטרף לקבוצתו.\n\nכשהירומה רוצה להסתיר את זהותו של סנה מקבוצות אחרות, סנה נאלץ להסתתר תחת קסדת Eyeshield 21, בטח אחד מבעלי הגב הרץ המסתוריים שלובש את ג'רזי מספר 21. לפי השמועות, Eyeshield 21 האגדי יכול לרוץ במהירות האור והגיע להישגים יוצאים מן הכלל בארצות הברית במהלך תקופתו בקולג' Notre Dame.\n\nמורגל להימנע מבעיותיו בעבר, המיומנות המיוחדת של סנה עשויה לעזור לו להפוך להיות הנשק הסודי החדש של ה-Deimon Devil Bats. ככל שהוא מתקשר עם חברי הקבוצה שלו, סנה מתחיל לפתח ביטחון עצמי ולטוות קשרים חשובים לאורך הדרך.\n\n(מקור: MAL Rewrite)",
+    "background": "Eyeshield 21 was original scheduled to stream in North America on Toonami Jetstream and NFL Rush in collaboration with the National Football League, but the plan fell through and the anime made its debut only on Toonami Jetstream, which later dropped the series. It would then become available in its entirety on Crunchyroll. Sentai Filmworks later licensed and released the first 52 episodes on DVD from 2010 to 2011.",
+    "background_hebrew": null,
+    "season": "אביב",
+    "year": 2005,
+    "broadcast": {
+      "day": "רביעי",
+      "time": "05:00",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי רביעי ב-05:00 (שעון ישראל)"
+    },
+    "producers": [
+      "TV Tokyo",
+      "Nihon Ad Systems",
+      "TV Tokyo Music",
+      "Shueisha"
+    ],
+    "licensors": [
+      "VIZ Media",
+      "Sentai Filmworks"
+    ],
+    "studios": [
+      "Gallop"
+    ],
+    "genres": [
+      "Sports / ספורט"
+    ],
+    "themes": [
+      "Team Sports / ספורט קבוצתי"
+    ],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 16,
+    "mal_id": 16,
+    "url": "https://myanimelist.net/anime/16/Hachimitsu_to_Clover",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1301/133577.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\16_Honey_and_Clover\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/16_Honey_and_Clover/ghrjjbyfyjod5dkbmw9h.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1301/133577l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\16_Honey_and_Clover\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078993/AnimeImages/16_Honey_and_Clover/toaoj7xsts0fk1zifxza.webp"
+      }
+    },
+    "trailer": {
+      "url": "https://www.youtube.com/watch?v=6TN4a0kZuXg",
+      "embed_url": "https://www.youtube.com/embed/6TN4a0kZuXg?enablejsapi=1&wmode=opaque&autoplay=1",
+      "images": {}
+    },
+    "approved": true,
+    "title": "Hachimitsu to Clover",
+    "title_english": "Honey and Clover",
+    "title_hebrew": "דבש ותלתן",
+    "title_japanese": "ハチミツとクローバー",
+    "title_synonyms": [
+      "HachiKuro",
+      "Honey & Clover"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 24,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2005-04-15T00:00:00+00:00",
+      "to": "2005-09-27T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 15,
+          "month": 4,
+          "year": 2005
+        },
+        "to": {
+          "day": 27,
+          "month": 9,
+          "year": 2005
+        }
+      },
+      "string": "15/04/2005 עד 27/09/2005"
+    },
+    "duration": "23 דקות",
+    "rating": "13+",
+    "score": 7.99,
+    "scored_by": 84900,
+    "rank": 678,
+    "popularity": 928,
+    "members": 273837,
+    "favorites": 4161,
+    "synopsis": "Yuuta Takemoto, a sophomore at an arts college, shares a cheap apartment with two seniors—the eccentric Shinobu Morita, who keeps failing to graduate due to his absenteeism, and the sensible Takumi Mayama, who acts as a proper senior to Takemoto, often looking out for him.\n\nTakemoto had not given much thought to his future until one fine spring day, when he meets the endearing Hagumi Hanamoto and falls in love at first sight. Incredibly gifted in the arts, Hagumi enrolls in Takemoto's university and soon befriends the popular pottery student Ayumi Yamada. Ayumi is already well acquainted with the three flatmates and secretly harbors deep feelings for one of them.\n\nHachimitsu to Clover is a heartwarming tale of youth, love, soul-searching, and self-discovery, intricately woven through the complex relationships between five dear friends.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "יוטה טקמוטו, סטודנט שנה שנייה במכללה לאמנות, חולק דירה זולה עם שני סטודנטים בכירים – שינובו מוריטה האקסצנטרי, שממשיך להיכשל לסיים את לימודיו בשל היעדרויותיו, וטאקומי מיאמה ההגיוני, שמשמש כמעין בכיר מוביל לטקמוטו ולעיתים קרובות דואג לו.\n\nטקמוטו לא חשב הרבה על עתידו עד אותו יום אביבי יפהפה, כאשר פגש את הקסומה הגומי הנאמוטו והתאהב בה ממבט ראשון. מוכשרת מאוד באמנויות, הגומי נרשמת לאוניברסיטה של טקמוטו ומתחברת במהרה לסטודנטית הקדרות הפופולרית, איום יאמדה. איום כבר מעורה היטב עם שלושת השותפים לחדר שלה ומחזיקה בסודות רגשות עמוקים כלפי אחד מהם.\n\nחצימצו לקלוור הוא סיפור חם לב על נעורים, אהבה, חיפוש עצמי וגילוי עצמי, הנארג במורכבות דרך הקשרים המסובכים בין חמישה חברים קרובים.\n\n(מקור: MAL Rewrite)",
+    "background": "Hachimitsu to Clover was the first anime to air on Fuji Television's noitaminA block.",
+    "background_hebrew": null,
+    "season": "אביב",
+    "year": 2005,
+    "broadcast": {
+      "day": "שישי",
+      "time": "10:35",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי שישי ב-10:35 (שעון ישראל)"
+    },
+    "producers": [
+      "Dentsu",
+      "Genco",
+      "Fuji TV",
+      "Asmik Ace",
+      "Shueisha"
+    ],
+    "licensors": [
+      "VIZ Media",
+      "Discotek Media"
+    ],
+    "studios": [
+      "J.C.Staff"
+    ],
+    "genres": [
+      "Comedy / קומדיה",
+      "Drama / דרמה",
+      "Romance / רומנטיקה"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר",
+      "Love Polygon / אהבה יותר מאישה אחת",
+      "Visual Arts / אומנות חזותית"
+    ],
+    "demographics": [
+      "Josei / נשים"
+    ]
+  },
+  {
+    "anizone_id": 17,
+    "mal_id": 17,
+    "url": "https://myanimelist.net/anime/17/Hungry_Heart__Wild_Striker",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/12/49655.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\17_Hungry_Heart__Wild_Striker\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/17_Hungry_Heart__Wild_Striker/zdyezvzapzctvwp12hvc.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/12/49655l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\17_Hungry_Heart__Wild_Striker\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/17_Hungry_Heart__Wild_Striker/rhp1v4dvozznkmtbgcgm.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Hungry Heart: Wild Striker",
+    "title_english": null,
+    "title_hebrew": "לב רעב: חלוץ הפרא",
+    "title_japanese": "ハングリーハート Wild Striker",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 52,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2002-09-11T00:00:00+00:00",
+      "to": "2003-09-10T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 11,
+          "month": 9,
+          "year": 2002
+        },
+        "to": {
+          "day": 10,
+          "month": 9,
+          "year": 2003
+        }
+      },
+      "string": "11/09/2002 עד 10/09/2003"
+    },
+    "duration": "23 דקות",
+    "rating": "13+",
+    "score": 7.54,
+    "scored_by": 13797,
+    "rank": 1794,
+    "popularity": 4551,
+    "members": 25785,
+    "favorites": 244,
+    "synopsis": "As the younger brother of Japanese soccer star Seisuke Kanou, Kyousuke was always expected to grow as a soccer player at the same pace his brother did—an expectation that proved too difficult to meet. Having fallen behind, he now lives in the shadow of his brother's success.\n\nEntering his freshman year at Jouyou Akanegaoka High School, Kyousuke vows never to play soccer again. However, Miki Tsujiwaki, the captain of the girls' soccer team, and Mori Kazuto, the manager of the boys' team, recognize Kyousuke's potential and want to see his return to the game for their own reasons.\n\nWith an opportunity to play soccer again, Kyousuke must either remain steadfast in his decision to abandon the sport he once loved, or allow himself to reignite that flame to become the best striker in the world.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "בתור האח הצעיר של כוכב הכדורגל היפני סייסוקה קאנו, תמיד היו ציפיות שקיוסוקה יגדל ויהיה שחקן כדורגל בקצב כמו האח שלו – ציפייה שהתבררה כקשה מדי להשגה. לאחר שנשאר מאחור, כעת הוא חי בצל הצלחתו של אחיו.\n\nכאשר הוא נכנס לשנתו הראשונה בתיכון ג'ויו אקנגואה, קיוסוקה נשבע שלעולם לא ישחק בכדורגל שוב. עם זאת, מיקי טסוג'יוואקי, קפטן קבוצת הכדורגל לבנות, ומורי קזוטו, מנהל קבוצת הבנים, מזהים את פוטנציאל של קיוסוקה ורוצים לראות את החזרה שלו למשחק מסיבות משלהם.\n\nעם ההזדמנות לשחק בכדורגל שוב, קיוסוקה חייב להישאר נאמן בהחלטה שלו לנטוש את הספורט שאהב פעם, או לאפשר לעצמו להדליק מחדש את הלהבה כדי להפוך להיות החלוץ הטוב בעולם.\n\n(מקור: MAL Rewrite)",
+    "background": "Hungry Heart: Wild Striker was released on DVD by Pony Canyon in Japan from February 19, 2003 to March 17, 2004.",
+    "background_hebrew": null,
+    "season": "סתיו",
+    "year": 2002,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": "Asia/Jerusalem",
+      "string": null
+    },
+    "producers": [],
+    "licensors": [],
+    "studios": [
+      "Nippon Animation"
+    ],
+    "genres": [
+      "Comedy / קומדיה",
+      "Slice of Life / חלק מהחיים",
+      "Sports / ספורט"
+    ],
+    "themes": [
+      "Team Sports / ספורט קבוצתי"
+    ],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  },
+  {
+    "anizone_id": 18,
+    "mal_id": 18,
+    "url": "https://myanimelist.net/anime/18/Initial_D_Fourth_Stage",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/zq0zypemsd8hcyzoxmrf.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/9/10521l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\18_Initial_D_Fourth_Stage\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/18_Initial_D_Fourth_Stage/rxgluvooixdp9kq7bv7v.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Initial D Fourth Stage",
+    "title_english": null,
+    "title_hebrew": "ד' (די) שלב רביעי",
+    "title_japanese": "頭文字〈イニシャル〉D FOURTH STAGE",
+    "title_synonyms": [
+      "Initial D 4th Stage"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 24,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2004-04-17T00:00:00+00:00",
+      "to": "2006-02-18T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 17,
+          "month": 4,
+          "year": 2004
+        },
+        "to": {
+          "day": 18,
+          "month": 2,
+          "year": 2006
+        }
+      },
+      "string": "17/04/2004 עד 18/02/2006"
+    },
+    "duration": "27 דקות",
+    "rating": "13+",
+    "score": 8.17,
+    "scored_by": 110722,
+    "rank": 439,
+    "popularity": 1273,
+    "members": 197506,
+    "favorites": 1361,
+    "synopsis": "Takumi Fujiwara finally joins Ryousuke and Keisuke Takahashi to create \"Project D.\" Their goal is twofold: Ryousuke wants to develop his \"High-Speed Street Racing Theory,\" while Keisuke and Takumi aim at improving their driving skills by facing powerful opponents on dangerous roads. The idea of Project D is to challenge street racing teams from other prefectures to improve both their uphill and downhill records. In order to attract the attention of the best racing teams, Ryousuke creates a dedicated website to announce the future battles of Project D and post the team's results.\n\nThe fourth season of Initial D details the hardships and successes of the members of Project D as they try to become the best street racing team outside of Gunma Prefecture.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "טאקומי פוג'יווארה מצטרף סוף-סוף לראיוסקה וקייסוקה טקהאשי ליצירת \"פרויקט D\". מטרתם היא כפולה: ראיוסקה רוצה לפתח את \"תיאורית המירוצים ברחובות במהירות גבוהה\", בעוד קייסוקה וטאקומי מכוונים לשיפור כישורי הנהיגה שלהם על ידי התמודדות עם יריבים חזקים בדרכים מסוכנות. הרעיון של פרויקט D הוא לאתגר קבוצות מירוצים ממחוזות אחרים כדי לשפר את התוצאות שלהם בעליות ובירידות. על מנת למשוך את תשומת ליבן של קבוצות המירוצים הטובות ביותר, ראיוסקה יוצר אתר אינטרנט ייעודי כדי להכריז על הקרבות העתידיים של פרויקט D ולפרסם את תוצאות הצוות.\n\nהעונה הרביעית של Initial D מפרטת את הקשיים וההצלחות של חברי פרויקט D בניסיונם להפוך לקבוצת המירוצים הטובה ביותר מחוץ למחוז גונמה.\n\n(מקור: MAL Rewrite)",
+    "background": "",
+    "background_hebrew": null,
+    "season": "אביב",
+    "year": 2004,
+    "broadcast": {
+      "day": null,
+      "time": null,
+      "timezone": "Asia/Jerusalem",
+      "string": null
+    },
+    "producers": [
+      "OB Planning"
+    ],
+    "licensors": [
+      "Funimation"
+    ],
+    "studios": [
+      "A.C.G.T."
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Drama / דרמה"
+    ],
+    "themes": [
+      "Racing / מרוצים"
+    ],
+    "demographics": [
+      "Seinen / מתבגרים"
+    ]
+  },
+  {
+    "anizone_id": 19,
+    "mal_id": 19,
+    "url": "https://myanimelist.net/anime/19/Monster",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/u6rkiieors9ljtkz7r5u.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/10/18793l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\19_Monster\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/19_Monster/sow4oftyxafhb7u1pxpk.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Monster",
+    "title_english": "Monster",
+    "title_hebrew": "מפלצת",
+    "title_japanese": "モンスター",
+    "title_synonyms": [],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 74,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2004-04-07T00:00:00+00:00",
+      "to": "2005-09-28T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 7,
+          "month": 4,
+          "year": 2004
+        },
+        "to": {
+          "day": 28,
+          "month": 9,
+          "year": 2005
+        }
+      },
+      "string": "07/04/2004 עד 28/09/2005"
+    },
+    "duration": "24 דקות",
+    "rating": "18+",
+    "score": 8.88,
+    "scored_by": 448108,
+    "rank": 25,
+    "popularity": 126,
+    "members": 1187356,
+    "favorites": 55751,
+    "synopsis": "Dr. Kenzou Tenma, an elite neurosurgeon recently engaged to his hospital director's daughter, is well on his way to ascending the hospital hierarchy. That is until one night, a seemingly small event changes Dr. Tenma's life forever. While preparing to perform surgery on someone, he gets a call from the hospital director telling him to switch patients and instead perform life-saving brain surgery on a famous performer. His fellow doctors, fiancée, and the hospital director applaud his accomplishment; but because of the switch, a poor immigrant worker is dead, causing Dr. Tenma to have a crisis of conscience.\n\nSo when a similar situation arises, Dr. Tenma stands his ground and chooses to perform surgery on the young boy Johan Liebert instead of the town's mayor. Unfortunately, this choice leads to serious ramifications for Dr. Tenma—losing his social standing being one of them. However, with the mysterious death of the director and two other doctors, Dr. Tenma's position is restored. With no evidence to convict him, he is released and goes on to attain the position of hospital director. \n\nNine years later when Dr. Tenma saves the life of a criminal, his past comes back to haunt him—once again, he comes face to face with the monster he operated on. He must now embark on a quest of pursuit to make amends for the havoc spread by the one he saved.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "1986, מערב גרמניה. ילד כבן 10 ושמו יוהאן ליברט, שנורה בראשו ומצבו אנוש, מובל אל בית חולים בעיר דיסלדורף. ד\"ר קנזו טנמה - רופא יפני גאון ומוערך שעובד כמנתח מוח בבית החולים - ממהר לנתח את הילד ולהוציא את שאריות הכדור מראשו. הניתוח מצליח, ויוהאן הצעיר מקבל את חייו במתנה הודות ליכולותיו המופלאות של ד\"ר טנמה, אולם הצלת הילד שאותה ביצע עלתה לד\"ר טנמה במחיר אישי כבד. כבד מאוד. אם לדייק, הבחירה שבחר באותו לילה קודר וגילוי הלב שגילה בעקבותיה חרצו באחת את גורלו של טנמה.\n9 שנים חלפו, והשפעות אירועי אותו המקרה כאילו נשכחו מאליהן. במקביל, גל רציחות מסתוריות מתחיל לגאות ברחבי גרמניה, כשהחשוד המרכזי בתיקים אלו הופך להיות לא אחר מאשר ד\"ר טנמה. טנמה, שנכח ברצח החשוד הקודם, נאלץ להמלט על נפשו בכדי לא להכלא על לא עוול בכפו. אמנם להימלטותו של טנמה יש מטרה נוספת. נוכחותו ברצח מביאה אותו לנהל מרדף יבשתי חסר סיכוי לטיהור שמו אחר הרוצח האמיתי - יוהאן, הילד שהציל לפני 9 שנים, וטנמה הוא אולי האדם היחיד שמסוגל לעצור את המפלצת שבתוכו.",
+    "background": "",
+    "background_hebrew": null,
+    "season": "אביב",
+    "year": 2004,
+    "broadcast": {
+      "day": "רביעי",
+      "time": "10:40",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי רביעי ב-10:40 (שעון ישראל)"
+    },
+    "producers": [
+      "VAP",
+      "Shogakukan-Shueisha Productions",
+      "Nippon Television Network"
+    ],
+    "licensors": [
+      "VIZ Media"
+    ],
+    "studios": [
+      "Madhouse"
+    ],
+    "genres": [
+      "Drama / דרמה",
+      "Mystery / מסתורין",
+      "Suspense / מתח"
+    ],
+    "themes": [
+      "Adult Cast / קהל בוגר",
+      "Psychological / פסיכולוגיה"
+    ],
+    "demographics": [
+      "Seinen / מתבגרים"
+    ]
+  },
+  {
+    "anizone_id": 20,
+    "mal_id": 20,
+    "url": "https://myanimelist.net/anime/20/Naruto",
+    "images": {
+      "image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1141/142503.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\20_Naruto\\image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078991/AnimeImages/20_Naruto/nkwontt78odedj9nk38r.webp"
+      },
+      "large_image_url": {
+        "original_url": "https://cdn.myanimelist.net/images/anime/1141/142503l.webp",
+        "local_path": "C:\\Users\\orgam\\OneDrive\\Desktop\\AnimeAPI\\assets\\img\\AnimeImages\\20_Naruto\\large_image_url.webp",
+        "cloud_url": "https://res.cloudinary.com/dy1ryyrni/image/upload/v1734078992/AnimeImages/20_Naruto/gvnaeblf84oglctcbs4h.webp"
+      }
+    },
+    "trailer": {
+      "url": null,
+      "embed_url": null,
+      "images": {}
+    },
+    "approved": true,
+    "title": "Naruto",
+    "title_english": "Naruto",
+    "title_hebrew": "נארוטו",
+    "title_japanese": "ナルト",
+    "title_synonyms": [
+      "NARUTO"
+    ],
+    "type": "TV",
+    "source": "Manga",
+    "episodes": 220,
+    "status": "הסתיים",
+    "aired": {
+      "from": "2002-10-03T00:00:00+00:00",
+      "to": "2007-02-08T00:00:00+00:00",
+      "prop": {
+        "from": {
+          "day": 3,
+          "month": 10,
+          "year": 2002
+        },
+        "to": {
+          "day": 8,
+          "month": 2,
+          "year": 2007
+        }
+      },
+      "string": "03/10/2002 עד 08/02/2007"
+    },
+    "duration": "23 דקות",
+    "rating": "13+",
+    "score": 8,
+    "scored_by": 2024555,
+    "rank": 667,
+    "popularity": 9,
+    "members": 2936231,
+    "favorites": 81580,
+    "synopsis": "Moments before Naruto Uzumaki's birth, a huge demon known as the Nine-Tailed Fox attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the demon's rampage, the leader of the village, the Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the newborn Naruto.\n\nIn the present, Naruto is a hyperactive and knuckle-headed ninja growing up within Konohagakure. Shunned because of the demon inside him, Naruto struggles to find his place in the village. His one burning desire to become the Hokage and be acknowledged by the villagers who despite him. However, while his goal leads him to unbreakable bonds with lifelong friends, it also lands him in the crosshairs of many deadly foes.\n\n[Written by MAL Rewrite]",
+    "synopsis_hebrew": "12 שנים לפני התקופה בה מתרחשת עלילת הסדרה, מפלצת אימתנית דמוית שועל ובעלת תשעה זנבות בשם קוראמה תקפה את הכפר קונוהאה אשר בארץ האש. למרבה המזל, השליט של הכפר (ביפנית: \"הוקאגה\" 火影) באותה התקופה, מינאטו נמיקאזה, הצליח לעצור את ההתקפה וחתם חצי מהצ'אקרה (מעין כוח חיים) של המפלצת בתוך גופו שלו ואת החצי השני בתוך גופו של בנו שזה עתה נולד, נארוטו.\n\nעלילת הסדרה מתמקדת בנארוטו אוזומקי אשר כעת הוא נער בן 12. למרות היותו בנו של ההוקאגה, מרבית תושבי הכפר, הן המבוגרים והן הילדים, נוהגים להתייחס אליו בחוסר כבוד או להתעלם ממנו בשל אמונתם שהוא המפלצת שכמעט והשמידה בעבר את הכפר. עקב צו של ההוקאגה השלישי האוסר לדון באירועים הקשורים למתקפה של המפלצת, נארוטו לא ידע דבר על המתקפה עד אשר 12 שנים לאחר המתקפה, הנינג'ה מיזוקי, אשר ערק בעבר מהכפר, מגלה את האמת לנארוטו. התעללות מצד תושבי הכפר מעוררת את רצונו של נארוטו להפוך להוקאגה הבא של הכפר, כדי שיוכל להוכיח את עצמו בפני חבריו לכפר ולזכות בכבודם.\n\nהנינג'ות בכפר מחולקים לצוותים המורכבים משלושה נינג'ות בדרג נמוך (גנין) ונינג'ה בדרג בינוני (צ'ונין) או בדרג גבוה (ג'ונין) אשר אמור לחנך, להדריך ולאמן אותם. נארוטו מצטרף לצוות 7, בראשותו של הג'ונין קאקאשי האטאקה, ואשר כולל את סאסקה אוצ'יהא וסאקורה הארונו. העלילה העיקרית של הסדרה עוקבת אחר משימותיו השונות של הצוות והצמיחה וההתפתחות האישית של נארוטו ויתר חברי הצוות שלו.\n\nלאחר משימות חשובות שונות, כולל משימה גדולה וחשובה במיוחד בארץ הגלים, קאקאשי מאפשר לצוות 7 להשתתף ב\"בחינות הצ'ונין\", אשר מטרתן לסנן ולבחור את הגנינים המיומנים ביותר שיתקדמו לדרג הבינוני בסולם הדרגות (צ'ונין), בכדי שהם יוכלו לקחת על עצמם משימות קשות יותר. בחלק הזה של העלילה נארוטו פוגש נינג'ה בשם ג'יראייה אשר מאמן אותו ומשמש כמחנך עבורו. במהלך הבחינות, הכפר מותקף על ידי אורוצ'ימרו, הנבל המרכזי של חלק זה בסדרה וחבר לשעבר בצוותו של ג'יראייה, אשר ערק מהכפר לפני שנים רבות ומנסה כעת להחריב את הכפר. אורוצ'ימארו מובס לבסוף על ידי ההוקאגה השלישי, אשר מקריב את חייו כדי לזמן את \"אל המוות\" במטרה להביס את אורוצ'ימארו.\n\nג'יראייה, אשר מסרב להפוך להוקאגה של הכפר מחליט לחפש יחד עם נארוטו את טסונאדה, אשר גם הייתה בעבר בצוות של אורוצ'ימארו, ואשר לדעתו צריכה להיות ההוקאגה הבא. בדרכם הם מותקפים על ידי אורוצ'ימארו ונלחמים בקרב עז, כאשר בסופו של דבר הם מביסים את אורוצ'ימארו, מחזירים את טסונאדה לכפר, והיא הופכת להוקאגה של הכפר.\n\nבעבר אורוצ'ימארו התעניין ביכולתיו של סאסקה, אשר הוא השורד היחיד משבט הנינג'ות \"אוצ'יהא\" אשר נרצחו כולו בידי אחיו של סאסאקה. בשל כך אורוצ'ימארו שולח שליחים שינסו לשכנע את סאסקה לערוק ולהצטרף לכוחותיו. סאסקה, המבקש להתחזק על מנת לנקום באחיו, נענה להזמנה. בניסיון למנוע את עריקתו של סאסקה, ההוקאגה החדש שולח את נארוטו וצוותו במטרה להשיב את סאסאקה, אך הם לא מצליחים לשכנע או להכריח אותו לחזור. נארוטו לא מוותר על סאסקה - נארוטו מחליט בהמשך לצאת למסע אימונים מחוץ לתחום הכפר על מנת לקבל הכשרה מג'יראייה בכדי להכין את עצמו לאתגרים שבפתח. ",
+    "background": "Naruto adapts the first 27 volumes of the original manga. It received numerous awards during its airing, including the \"Best Full-Length Animation Program Award\" in the Third UStv Awards and the 38th \"Best Animated Show\" in IGN's Top 100 Animated Series.",
+    "background_hebrew": null,
+    "season": "סתיו",
+    "year": 2002,
+    "broadcast": {
+      "day": "חמישי",
+      "time": "05:30",
+      "timezone": "Asia/Jerusalem",
+      "string": "בימי חמישי ב-05:30 (שעון ישראל)"
+    },
+    "producers": [
+      "TV Tokyo",
+      "Aniplex",
+      "Shueisha"
+    ],
+    "licensors": [
+      "VIZ Media"
+    ],
+    "studios": [
+      "Pierrot"
+    ],
+    "genres": [
+      "Action / אקשן",
+      "Adventure / הרפתקאות",
+      "Fantasy / פנטזיה"
+    ],
+    "themes": [
+      "Martial Arts / אומנויות לחימה"
+    ],
+    "demographics": [
+      "Shounen / נער"
+    ]
+  }
+]

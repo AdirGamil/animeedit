@@ -1,0 +1,15 @@
+{
+  "name": "anime-server",
+  "version": "1.0.0",
+  "description": "Server for managing anime data",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "fs": "^0.0.1-security"
+  }
+}
