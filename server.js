@@ -2,7 +2,9 @@
  * server.js - using Mongoose (no local JSON)
  ***********************************************/
 import dotenv from 'dotenv'
-dotenv.config() // טוען את משתני הסביבה מקובץ .env (אם קיים)
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config()
+}
 
 import express from 'express'
 import path from 'path'
