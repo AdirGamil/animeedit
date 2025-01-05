@@ -306,11 +306,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
 })
 
-
 // --------------------------------
 // 8) הפעלת השרת
 // --------------------------------
-const PORT = 3000
+const PORT = process.env.PORT || 3030 // השתמש ב-PORT שמספק Render או בפורט 3000 כגיבוי
 httpServer.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
 })
